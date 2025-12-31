@@ -1,4 +1,5 @@
-import Blog from '@/app/components/Blog';
+import Blog from "../components/Blog";
+
 
 export const metadata = {
   title: 'Blog - Web Development Articles',
@@ -6,5 +7,5 @@ export const metadata = {
 };
 
 export default function BlogPage() {
-  return <Blog />;
+  return <Blog posts={[]} />;
 }

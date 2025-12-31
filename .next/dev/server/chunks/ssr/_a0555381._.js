@@ -6,6 +6,7 @@ __turbopack_context__.s([
     "posts",
     ()=>posts
 ]);
+"use client";
 const posts = [
     {
         id: 1,

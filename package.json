@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "cross-env NEXT_PRIVATE_TURBOPACK=0 next dev",
+    "dev": " next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -13,11 +13,13 @@
   "dependencies": {
     "lucide-react": "^0.344.0",
     "next": "^16.1.0-canary.16",
+    "nodemailer": "^7.0.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "^20.19.26",
+    "@types/nodemailer": "^7.0.4",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.2.0",
     "autoprefixer": "^10.4.18",

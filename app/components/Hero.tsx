@@ -23,7 +23,7 @@ export default function Hero() {
 
           <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-12">
             Level 3 Co-op Software Engineering student at <span className='font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600 '>McMaster University </span> .
-            Passionate about building scalable web applications with modern technologies.
+            Passionate about building scalable software applications with modern technologies.
           </p>
 
           <div className="flex justify-center space-x-6 mb-12">

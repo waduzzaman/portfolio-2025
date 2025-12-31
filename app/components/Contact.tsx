@@ -11,48 +11,43 @@ export default function Contact() {
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
+  const [submitStatus, setSubmitStatus] = useState<{ status: 'success' | 'error', message?: string } | null>(null);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
-    setSubmitStatus('success');
-    setIsSubmitting(false);
-    setFormData({ name: '', email: '', subject: '', message: '' });
+      const data = await res.json();
 
-    setTimeout(() => setSubmitStatus(null), 5000);
-  };
+      if (!res.ok) throw new Error(data.error || 'Failed to send message');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
+      setSubmitStatus({ status: 'success', message: 'Message sent successfully!' });
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error: any) {
+      console.error(error);
+      setSubmitStatus({ status: 'error', message: error.message });
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => setSubmitStatus(null), 5000);
+    }
   };
 
   const contactInfo = [
-    {
-      icon: Mail,
-      title: 'Email',
-      value: 'waduzzam@mcmaster.ca',
-      link: 'mailto:waduzzam@mcmaster.ca',
-    },
-    {
-      icon: Phone,
-      title: 'Phone',
-      value: '(647) 510-8871',
-      link: 'tel:+16475108871',
-    },
-    {
-      icon: MapPin,
-      title: 'Location',
-      value: 'Toronto, Ontario, Canada',
-      link: null,
-    },
+    { icon: Mail, title: 'Email', value: 'waduzzam@mcmaster.ca', link: 'mailto:waduzzam@mcmaster.ca' },
+    { icon: Phone, title: 'Phone', value: '(647) 510-8871', link: 'tel:+16475108871' },
+    { icon: MapPin, title: 'Location', value: 'Toronto, Ontario, Canada', link: null },
   ];
 
   return (
@@ -64,6 +59,7 @@ export default function Contact() {
         <div className="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
 
         <div className="grid md:grid-cols-2 gap-12">
+          {/* Contact Info */}
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
               Let's Connect
@@ -99,52 +95,25 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* Contact Form */}
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-gray-900 dark:text-white"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-gray-900 dark:text-white"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-gray-900 dark:text-white"
-                />
-              </div>
+              {['name', 'email', 'subject'].map(field => (
+                <div key={field}>
+                  <label htmlFor={field} className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    {field.charAt(0).toUpperCase() + field.slice(1)}
+                  </label>
+                  <input
+                    type={field === 'email' ? 'email' : 'text'}
+                    id={field}
+                    name={field}
+                    value={formData[field as keyof typeof formData]}
+                    onChange={handleChange}
+                    required
+                    className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent text-gray-900 dark:text-white"
+                  />
+                </div>
+              ))}
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -161,9 +130,15 @@ export default function Contact() {
                 ></textarea>
               </div>
 
-              {submitStatus === 'success' && (
-                <div className="p-4 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-lg">
-                  Message sent successfully! I'll get back to you soon.
+              {submitStatus && (
+                <div
+                  className={`p-4 rounded-lg ${
+                    submitStatus.status === 'success'
+                      ? 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300'
+                      : 'bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300'
+                  }`}
+                >
+                  {submitStatus.message}
                 </div>
               )}
 

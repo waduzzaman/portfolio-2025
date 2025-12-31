@@ -16,6 +16,21 @@ export default function Testimonials() {
       rating: 5,
     },
     {
+      name: 'Dr. Nasirul Islam, PT, PhD',
+      feedback: 'Mahbub designed, developed, and deployed our clinic website, therehabnest.com, with a clean, modern, and highly professional look. He successfully incorporated an AI-powered chat feature that helps patients get quick information and improves overall engagement. The website is fast, user-friendly, and well-structured, making it easy for patients to navigate and book services. His attention to detail, strong technical skills, and clear communication made the entire process smooth from start to finish.I highly recommend Mahbub for healthcare websites and any professional web development projects.',
+      designation: 'CEO, The Rehab Nest',
+      avatar: '/nasirul.jpg',
+      rating: 5,
+    },
+    {
+      name: 'Asaduzzaman Asad',
+      feedback: 'Mahbub delivered a clean and well-structured bilingual (Bangla & English) news portal with an efficient role-based system for writers and editors. The platform is fast, secure, and easy to manage. His use of modern technologies like Next.js, React, Node.js, and MongoDB ensured excellent performance and reliability. He was professional, responsive, and detail-oriented throughout the project. I highly recommend him for full-stack web development work.',
+
+      designation: 'Editor, The Top News24',
+      avatar: '/asaduzzaman.jpg',
+      rating: 5,
+    },
+    {
       name: 'Mohammad Sohel',
       feedback: 'We are so pleased with the website created for our clinic! The design is clean, professional, and easy to navigate, which makes it simple for our patients to find the information they need. The site has greatly improved our online presence and has made it easier for people to connect with us. We\'ve already received positive feedback from our clients, especially about the user-friendly booking system. We feel confident that this website will help us continue to support and engage our community. Thank you for your hard work and dedication in bringing our vision to life!',
       designation: 'Psychotherapist, Mohammad Care Home',
