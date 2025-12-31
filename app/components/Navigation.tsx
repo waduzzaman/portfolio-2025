@@ -27,6 +27,7 @@ export default function Navigation() {
     { label: 'Education', href: '#education', isPage: false },
     { label: 'Skills', href: '#skills', isPage: false },
     { label: 'Projects', href: '#projects', isPage: false },
+     { label: 'Agile Dev Flow', href: '#work-flow', isPage: false },
     { label: 'Testimonials', href: '#testimonials', isPage: false },
     // { label: 'Blog', href: '/blog', isPage: true },
     { label: 'Contact', href: '#contact', isPage: false },
