@@ -27,7 +27,8 @@ export default function Navigation() {
     { label: "Projects", href: "#projects" },
     { label: "Dev Flow", href: "#work-flow" },
     { label: "Testimonials", href: "#testimonials" },
-    { label: "Contact", href: "#contact" },
+   
+       { label: "Contact", href: "#contact" },
   ];
 
   const handleSectionClick = (
@@ -97,12 +98,12 @@ export default function Navigation() {
             })}
 
             {/* Blog */}
-            {/* <Link
+            <Link
               href="/blog"
               className="px-4 py-2 rounded-lg font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all"
             >
               Blog
-            </Link> */}
+            </Link>
 
             {/* Resume Button */}
             <a
