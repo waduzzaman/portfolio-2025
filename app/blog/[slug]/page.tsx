@@ -204,7 +204,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                       <CardTitle className="hover:text-indigo-600 transition-colors">{related.title}</CardTitle>
                       <CardDescription>{related.excerpt}</CardDescription>
                       <div className="mt-2 text-indigo-600 font-medium inline-flex items-center gap-1">
-                        Read More
+                        Read More Blogs
                         <ArrowRight className="w-4 h-4" />
                       </div>
                     </CardHeader>
