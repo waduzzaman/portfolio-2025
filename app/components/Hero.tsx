@@ -14,7 +14,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 animate-fade-in">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">Mahbub</span>
+            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">Mahbub E Waduzzaman</span>
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-4">
