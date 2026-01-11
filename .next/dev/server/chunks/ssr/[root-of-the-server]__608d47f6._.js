@@ -439,67 +439,68 @@ function BlogPage() {
     const [selectedCategory, setSelectedCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("All");
     const blogPosts = [
         {
-            slug: "understanding-plantar-fasciitis",
-            title: "Understanding Plantar Fasciitis: Causes, Symptoms, and Treatment",
-            excerpt: "Learn about this common foot condition that affects millions of people and discover effective treatment options to alleviate pain and restore mobility.",
-            category: "Foot Health",
-            date: "2024-01-15",
+            slug: "latest-ai-trends-2025",
+            title: "Latest AI Trends in 2025: What to Expect",
+            excerpt: "Explore the newest developments in artificial intelligence, including generative AI, AI-powered automation, and the impact on various industries.",
+            category: "AI & Machine Learning",
+            date: "2025-12-15",
+            readTime: "6 min read",
+            image: "https://images.pexels.com/photos/5473184/pexels-photo-5473184.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            slug: "cloud-computing-best-practices",
+            title: "Cloud Computing Best Practices for Modern Businesses",
+            excerpt: "Learn about effective strategies for leveraging cloud platforms, optimizing performance, ensuring security, and reducing costs in your IT infrastructure.",
+            category: "Cloud & DevOps",
+            date: "2025-12-10",
             readTime: "5 min read",
             image: "https://images.pexels.com/photos/7659564/pexels-photo-7659564.jpeg?auto=compress&cs=tinysrgb&w=600"
         },
         {
-            slug: "preventative-measures-back-pain",
-            title: "Preventative Measures for Back Pain: Tips from Our Physiotherapists",
-            excerpt: "Discover practical strategies to prevent back pain, improve posture, and maintain a healthy spine through simple lifestyle modifications and exercises.",
-            category: "Pain Management",
-            date: "2024-01-10",
+            slug: "cybersecurity-2025-guide",
+            title: "Cybersecurity in 2025: Protecting Your Digital Assets",
+            excerpt: "Understand the emerging cybersecurity threats, essential protective measures, and the tools every organization should implement to stay secure.",
+            category: "Cybersecurity",
+            date: "2025-12-05",
+            readTime: "7 min read",
+            image: "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            slug: "top-programming-languages-2025",
+            title: "Top Programming Languages to Learn in 2025",
+            excerpt: "Discover the most in-demand programming languages, their applications in AI, web, and mobile development, and why they matter for your career.",
+            category: "Programming",
+            date: "2025-11-28",
+            readTime: "5 min read",
+            image: "https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            slug: "blockchain-and-web3",
+            title: "Blockchain and Web3: The Future of Decentralized Technology",
+            excerpt: "Explore blockchain innovations, Web3 applications, NFTs, and how decentralization is transforming finance, gaming, and digital identity.",
+            category: "Blockchain & Web3",
+            date: "2025-11-20",
             readTime: "6 min read",
             image: "https://images.pexels.com/photos/7176325/pexels-photo-7176325.jpeg?auto=compress&cs=tinysrgb&w=600"
         },
         {
-            slug: "workplace-injury-conditions",
-            title: "Common Workplace Injury Conditions and How to Prevent Them",
-            excerpt: "Explore the most common workplace injuries, their causes, and evidence-based strategies to create a safer work environment and prevent injuries.",
-            category: "Workplace Health",
-            date: "2024-01-05",
-            readTime: "7 min read",
-            image: "https://images.pexels.com/photos/5473184/pexels-photo-5473184.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-            slug: "ergonomics-injury-prevention",
-            title: "Ergonomics and Injury Prevention: Setting Up Your Workspace",
-            excerpt: "Learn how proper ergonomic setup can prevent repetitive strain injuries and improve productivity in your home or office workspace.",
-            category: "Workplace Health",
-            date: "2023-12-28",
+            slug: "emerging-iot-technologies",
+            title: "Emerging IoT Technologies: Smart Devices and Connected Worlds",
+            excerpt: "Learn how Internet of Things devices are shaping smart homes, healthcare, and industry, along with the key challenges and opportunities for developers.",
+            category: "IoT & Smart Tech",
+            date: "2025-11-15",
             readTime: "5 min read",
-            image: "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-            slug: "benefits-regular-massage",
-            title: "The Benefits of Regular Massage Therapy for Overall Wellness",
-            excerpt: "Discover how consistent massage therapy can improve your physical health, reduce stress, and enhance your overall quality of life.",
-            category: "Wellness",
-            date: "2023-12-20",
-            readTime: "4 min read",
-            image: "https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-            slug: "mental-health-physical-health",
-            title: "The Connection Between Mental Health and Physical Health",
-            excerpt: "Explore the intricate relationship between mind and body, and learn how addressing mental health can improve physical rehabilitation outcomes.",
-            category: "Mental Health",
-            date: "2023-12-15",
-            readTime: "6 min read",
             image: "https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600"
         }
     ];
     const categories = [
         "All",
-        "Pain Management",
-        "Foot Health",
-        "Workplace Health",
-        "Wellness",
-        "Mental Health"
+        "AI & Machine Learning",
+        "Cloud & DevOps",
+        "Cybersecurity",
+        "Programming",
+        "Blockchain & Web3",
+        "IoT & Smart Tech"
     ];
     const filteredPosts = selectedCategory === "All" ? blogPosts : blogPosts.filter((post)=>post.category === selectedCategory);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -507,11 +508,11 @@ function BlogPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navigation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/blog/page.tsx",
-                lineNumber: 96,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "bg-gradient-to-br from-emerald-50 via-white to-blue-50 py-20",
+                className: "bg-gradient-to-br from-sky-50 via-white to-indigo-50 py-20",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "container mx-auto px-4",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -519,34 +520,34 @@ function BlogPage() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "text-4xl md:text-5xl font-bold text-slate-900 mb-6",
-                                children: "Health & Wellness Blog"
+                                children: "Tech & Software Blog"
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/page.tsx",
-                                lineNumber: 100,
+                                lineNumber: 102,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-lg md:text-xl text-slate-600 leading-relaxed",
-                                children: "Expert insights and practical advice from our healthcare professionals to help you on your wellness journey"
+                                children: "Stay updated with the latest trends, insights, and expert advice in software development, AI, cybersecurity, and emerging technologies."
                             }, void 0, false, {
                                 fileName: "[project]/app/blog/page.tsx",
-                                lineNumber: 101,
+                                lineNumber: 103,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/blog/page.tsx",
-                        lineNumber: 99,
+                        lineNumber: 101,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/blog/page.tsx",
-                    lineNumber: 98,
+                    lineNumber: 100,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/blog/page.tsx",
-                lineNumber: 97,
+                lineNumber: 99,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -558,16 +559,16 @@ function BlogPage() {
                             className: "flex flex-wrap gap-2 justify-center mb-8",
                             children: categories.map((category)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setSelectedCategory(category),
-                                    className: `px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category ? "bg-emerald-600 text-white" : "bg-slate-100 text-slate-700 hover:bg-emerald-600 hover:text-white"}`,
+                                    className: `px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category ? "bg-indigo-600 text-white" : "bg-slate-100 text-slate-700 hover:bg-indigo-600 hover:text-white"}`,
                                     children: category
                                 }, category, false, {
                                     fileName: "[project]/app/blog/page.tsx",
-                                    lineNumber: 113,
+                                    lineNumber: 115,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/blog/page.tsx",
-                            lineNumber: 111,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -585,12 +586,12 @@ function BlogPage() {
                                                     className: "w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/blog/page.tsx",
-                                                    lineNumber: 133,
+                                                    lineNumber: 135,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/blog/page.tsx",
-                                                lineNumber: 132,
+                                                lineNumber: 134,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
@@ -598,24 +599,24 @@ function BlogPage() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "flex items-center gap-2 mb-3",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-xs font-semibold px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full",
+                                                            className: "text-xs font-semibold px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full",
                                                             children: post.category
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/blog/page.tsx",
-                                                            lineNumber: 141,
+                                                            lineNumber: 143,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/blog/page.tsx",
-                                                        lineNumber: 140,
+                                                        lineNumber: 142,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
-                                                        className: "text-xl hover:text-emerald-600 transition-colors",
+                                                        className: "text-xl hover:text-indigo-600 transition-colors",
                                                         children: post.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/blog/page.tsx",
-                                                        lineNumber: 145,
+                                                        lineNumber: 147,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
@@ -623,13 +624,13 @@ function BlogPage() {
                                                         children: post.excerpt
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/blog/page.tsx",
-                                                        lineNumber: 146,
+                                                        lineNumber: 148,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/blog/page.tsx",
-                                                lineNumber: 139,
+                                                lineNumber: 141,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -644,7 +645,7 @@ function BlogPage() {
                                                                         className: "w-4 h-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/blog/page.tsx",
-                                                                        lineNumber: 151,
+                                                                        lineNumber: 153,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -655,13 +656,13 @@ function BlogPage() {
                                                                         })
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/blog/page.tsx",
-                                                                        lineNumber: 152,
+                                                                        lineNumber: 154,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/blog/page.tsx",
-                                                                lineNumber: 150,
+                                                                lineNumber: 152,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -671,82 +672,82 @@ function BlogPage() {
                                                                         className: "w-4 h-4"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/blog/page.tsx",
-                                                                        lineNumber: 161,
+                                                                        lineNumber: 163,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                         children: post.readTime
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/blog/page.tsx",
-                                                                        lineNumber: 162,
+                                                                        lineNumber: 164,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/blog/page.tsx",
-                                                                lineNumber: 160,
+                                                                lineNumber: 162,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/blog/page.tsx",
-                                                        lineNumber: 149,
+                                                        lineNumber: 151,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "mt-4 text-emerald-600 font-medium inline-flex items-center gap-1",
+                                                        className: "mt-4 text-indigo-600 font-medium inline-flex items-center gap-1",
                                                         children: [
                                                             "Read More",
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                                                                 className: "w-4 h-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/blog/page.tsx",
-                                                                lineNumber: 167,
+                                                                lineNumber: 169,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/blog/page.tsx",
-                                                        lineNumber: 165,
+                                                        lineNumber: 167,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/blog/page.tsx",
-                                                lineNumber: 148,
+                                                lineNumber: 150,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/blog/page.tsx",
-                                        lineNumber: 131,
+                                        lineNumber: 133,
                                         columnNumber: 17
                                     }, this)
                                 }, post.slug, false, {
                                     fileName: "[project]/app/blog/page.tsx",
-                                    lineNumber: 130,
+                                    lineNumber: 132,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/blog/page.tsx",
-                            lineNumber: 128,
+                            lineNumber: 130,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/blog/page.tsx",
-                    lineNumber: 110,
+                    lineNumber: 112,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/blog/page.tsx",
-                lineNumber: 109,
+                lineNumber: 111,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/blog/page.tsx",
-        lineNumber: 95,
+        lineNumber: 97,
         columnNumber: 5
     }, this);
 }

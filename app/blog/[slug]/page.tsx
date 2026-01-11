@@ -45,7 +45,8 @@ export function generateStaticParams() {
 }
 
 // --- Component ---
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   // --- Blog Data ---
   const blogData: BlogData = {
     'latest-ai-trends-2025': {
@@ -129,7 +130,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   };
 
   // --- Get current post ---
-  const post: Post | undefined = blogData[params.slug];
+  const post: Post | undefined = blogData[slug];
   if (!post) return <p className="text-center py-20">Post not found.</p>;
 
   return (

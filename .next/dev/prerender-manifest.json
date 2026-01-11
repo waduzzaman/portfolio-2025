@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "c11d40e3b4686fa30bf1b983c48a2458",
-    "previewModeSigningKey": "099fddd16d2bc2399046c69cb7c00109d0eab8d246d30b2d8b1174dab9b2b98e",
-    "previewModeEncryptionKey": "cbea7c83d5789e1c91f7b75e5b465ef447d013a69f7fe8d560c033d6b9abff39"
-  }
-}
+{"version":4,"routes":{"/blog/latest-ai-trends-2025":{},"/blog/cloud-computing-best-practices":{},"/blog/cybersecurity-2025-guide":{},"/blog/top-programming-languages-2025":{},"/blog/blockchain-and-web3":{},"/blog/emerging-iot-technologies":{}},"dynamicRoutes":{"/blog/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/blog/[slug]","routeRegex":"^\\/blog\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"c405a2318daf954e6aa164460c0e6a22","previewModeSigningKey":"4e373b94ed0ad612b45eba4d48600854f422785e50d94e6e030e89d2d6f8218d","previewModeEncryptionKey":"27ca9f00534db8969642cb590f5c19e213b6a0e8a4d8e5972a9c81fb6043fc8d"}}
