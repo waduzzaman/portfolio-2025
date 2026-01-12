@@ -19,7 +19,7 @@ export default function BlogPage() {
       date: "2025-12-15",
       readTime: "6 min read",
       image:
-        "https://images.pexels.com/photos/5473184/pexels-photo-5473184.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "/ai.png",
     },
     {
       slug: "cloud-computing-best-practices",
@@ -30,7 +30,7 @@ export default function BlogPage() {
       date: "2025-12-10",
       readTime: "5 min read",
       image:
-        "https://images.pexels.com/photos/7659564/pexels-photo-7659564.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "/cloud.png",
     },
     {
       slug: "cybersecurity-2025-guide",
@@ -41,7 +41,7 @@ export default function BlogPage() {
       date: "2025-12-05",
       readTime: "7 min read",
       image:
-        "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "/cybersecurity.png",
     },
     {
       slug: "top-programming-languages-2025",
@@ -52,7 +52,7 @@ export default function BlogPage() {
       date: "2025-11-28",
       readTime: "5 min read",
       image:
-        "https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "/programming-language.png",
     },
     {
       slug: "blockchain-and-web3",
@@ -63,7 +63,7 @@ export default function BlogPage() {
       date: "2025-11-20",
       readTime: "6 min read",
       image:
-        "https://images.pexels.com/photos/7176325/pexels-photo-7176325.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "/blockchain.png",
     },
     {
       slug: "emerging-iot-technologies",
@@ -74,7 +74,7 @@ export default function BlogPage() {
       date: "2025-11-15",
       readTime: "5 min read",
       image:
-        "https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "/iot.png",
     },
   ];
 

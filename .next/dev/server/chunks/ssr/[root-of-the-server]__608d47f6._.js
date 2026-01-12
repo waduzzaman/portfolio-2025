@@ -229,7 +229,7 @@ function Navigation() {
                                             columnNumber: 19
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             href: "/",
-                                            className: "px-4 py-2 rounded-lg font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30",
+                                            className: "px-2 py-2 rounded-lg font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30",
                                             children: "Home"
                                         }, item.label, false, {
                                             fileName: "[project]/app/components/Navigation.tsx",
@@ -240,7 +240,7 @@ function Navigation() {
                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: item.href,
                                         onClick: (e)=>handleSectionClick(e, item.href),
-                                        className: "px-4 py-2 rounded-lg font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all",
+                                        className: "px-2 py-2 rounded-lg font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all",
                                         children: item.label
                                     }, item.label, false, {
                                         fileName: "[project]/app/components/Navigation.tsx",
@@ -445,7 +445,7 @@ function BlogPage() {
             category: "AI & Machine Learning",
             date: "2025-12-15",
             readTime: "6 min read",
-            image: "https://images.pexels.com/photos/5473184/pexels-photo-5473184.jpeg?auto=compress&cs=tinysrgb&w=600"
+            image: "/ai.png"
         },
         {
             slug: "cloud-computing-best-practices",
@@ -454,7 +454,7 @@ function BlogPage() {
             category: "Cloud & DevOps",
             date: "2025-12-10",
             readTime: "5 min read",
-            image: "https://images.pexels.com/photos/7659564/pexels-photo-7659564.jpeg?auto=compress&cs=tinysrgb&w=600"
+            image: "/cloud.png"
         },
         {
             slug: "cybersecurity-2025-guide",
@@ -463,7 +463,7 @@ function BlogPage() {
             category: "Cybersecurity",
             date: "2025-12-05",
             readTime: "7 min read",
-            image: "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=600"
+            image: "/cybersecurity.png"
         },
         {
             slug: "top-programming-languages-2025",
@@ -472,7 +472,7 @@ function BlogPage() {
             category: "Programming",
             date: "2025-11-28",
             readTime: "5 min read",
-            image: "https://images.pexels.com/photos/3997386/pexels-photo-3997386.jpeg?auto=compress&cs=tinysrgb&w=600"
+            image: "/programming-language.png"
         },
         {
             slug: "blockchain-and-web3",
@@ -481,7 +481,7 @@ function BlogPage() {
             category: "Blockchain & Web3",
             date: "2025-11-20",
             readTime: "6 min read",
-            image: "https://images.pexels.com/photos/7176325/pexels-photo-7176325.jpeg?auto=compress&cs=tinysrgb&w=600"
+            image: "/blockchain.png"
         },
         {
             slug: "emerging-iot-technologies",
@@ -490,7 +490,7 @@ function BlogPage() {
             category: "IoT & Smart Tech",
             date: "2025-11-15",
             readTime: "5 min read",
-            image: "https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600"
+            image: "/iot.png"
         }
     ];
     const categories = [

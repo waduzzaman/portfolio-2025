@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calendar, Clock, User, ArrowRight } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import React from 'react';
+import Navigation from '@/app/components/Navigation';
 
 // --- Types ---
 type RelatedPost = {
@@ -48,15 +49,14 @@ export function generateStaticParams() {
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   // --- Blog Data ---
-  const blogData: BlogData = {
+ const blogData: BlogData = {
     'latest-ai-trends-2025': {
       category: 'AI & Machine Learning',
       title: 'Latest AI Trends in 2025: What to Expect',
       date: '2025-12-15',
       readTime: '6 min read',
-      author: 'Tech Insights Team',
-      image:
-        'https://images.pexels.com/photos/5473184/pexels-photo-5473184.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      author: 'Mahbub',
+      image: '/ai.png',
       content: (
         <>
           <p className="text-xl text-slate-600 leading-relaxed mb-6">
@@ -73,60 +73,159 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             AI-powered automation is streamlining workflows in finance, healthcare, and IT operations, reducing manual work and
             improving decision-making.
           </p>
-          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-4">Ethics and AI Governance</h2>
-          <p className="text-slate-700 leading-relaxed mb-6">
-            As AI adoption grows, ethical considerations and governance frameworks are critical to ensure safe and responsible
-            deployment of intelligent systems.
-          </p>
           <div className="bg-indigo-50 border-l-4 border-indigo-600 p-6 my-8">
             <h3 className="text-xl font-bold text-slate-900 mb-2">Expert Tip</h3>
             <p className="text-slate-700">
-              Staying updated with AI research and industry applications is key for developers and tech professionals. Experiment
-              with AI tools and integrate them into your workflows to remain competitive.
+              Staying updated with AI research and industry applications is key for developers and tech professionals.
             </p>
           </div>
         </>
       ),
       relatedPosts: [
-        {
-          slug: 'cloud-computing-best-practices',
-          title: 'Cloud Computing Best Practices for Modern Businesses',
-          excerpt: 'Optimize performance, security, and cost in your cloud infrastructure',
-        },
-        {
-          slug: 'cybersecurity-2025-guide',
-          title: 'Cybersecurity in 2025: Protecting Your Digital Assets',
-          excerpt: 'Emerging threats and essential defense strategies',
-        },
+        { slug: 'cloud-computing-best-practices', title: 'Cloud Computing Best Practices', excerpt: 'Optimize performance and security.' },
+        { slug: 'top-programming-languages-2025', title: 'Top Languages in 2025', excerpt: 'Languages driving the AI revolution.' },
       ],
     },
-    // --- Add other posts in the same format ---
+
     'cloud-computing-best-practices': {
       category: 'Cloud & DevOps',
       title: 'Cloud Computing Best Practices for Modern Businesses',
       date: '2025-12-10',
       readTime: '5 min read',
-      author: 'CloudTech Team',
-      image:
-        'https://images.pexels.com/photos/7659564/pexels-photo-7659564.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      author: 'Mahbub',
+      image: '/cloud.png',
       content: (
         <>
           <p className="text-xl text-slate-600 leading-relaxed mb-6">
-            Leveraging cloud platforms effectively is key to modern IT success. Learn best practices to optimize performance, cost,
-            and security.
+            Leveraging cloud platforms effectively is key to modern IT success. Learn best practices to optimize performance, cost, and security.
+          </p>
+          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-4">Cost Optimization</h2>
+          <p className="text-slate-700 leading-relaxed mb-6">
+            Implementing auto-scaling and monitoring usage patterns can significantly reduce waste in cloud spending.
+          </p>
+          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-4">Cloud Security</h2>
+          <p className="text-slate-700 leading-relaxed mb-6">
+            Adopting a Zero Trust architecture ensures that every access request is verified, regardless of where it originates.
           </p>
         </>
       ),
       relatedPosts: [
-        {
-          slug: 'latest-ai-trends-2025',
-          title: 'Latest AI Trends in 2025: What to Expect',
-          excerpt:
-            'Explore the newest AI developments including generative AI, automation, and the impact on industries.',
-        },
+        { slug: 'cybersecurity-2025-guide', title: 'Cybersecurity 2025 Guide', excerpt: 'Protect your assets in a cloud-first world.' },
+        { slug: 'emerging-iot-technologies', title: 'Emerging IoT Tech', excerpt: 'How the cloud powers connected devices.' },
       ],
     },
-    // ...other posts
+
+    'cybersecurity-2025-guide': {
+      category: 'Cybersecurity',
+      title: 'Cybersecurity in 2025: Protecting Your Digital Assets',
+      date: '2025-12-05',
+      readTime: '7 min read',
+      author: 'Mahbub',
+      image: '/cybersecurity.png',
+      content: (
+        <>
+          <p className="text-xl text-slate-600 leading-relaxed mb-6">
+            As threats become more sophisticated, organizations must evolve their defense mechanisms to protect sensitive data and infrastructure.
+          </p>
+          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-4">The Rise of AI-Driven Attacks</h2>
+          <p className="text-slate-700 leading-relaxed mb-6">
+            Hackers are now using AI to automate phishing and identify system vulnerabilities faster than ever.
+          </p>
+          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-4">Multi-Factor Authentication (MFA)</h2>
+          <p className="text-slate-700 leading-relaxed mb-6">
+            Moving beyond SMS-based MFA to hardware keys and biometric verification is no longer optional for high-security environments.
+          </p>
+        </>
+      ),
+      relatedPosts: [
+        { slug: 'blockchain-and-web3', title: 'Blockchain and Web3', excerpt: 'Security through decentralization.' },
+        { slug: 'latest-ai-trends-2025', title: 'AI Trends 2025', excerpt: 'AI as a tool for both defense and attack.' },
+      ],
+    },
+
+    'top-programming-languages-2025': {
+      category: 'Programming',
+      title: 'Top Programming Languages to Learn in 2025',
+      date: '2025-11-28',
+      readTime: '5 min read',
+      author: 'Mahbub',
+      image: '/programming-language.png',
+      content: (
+        <>
+          <p className="text-xl text-slate-600 leading-relaxed mb-6">
+            Choosing the right language can define your career path. Here are the languages dominating AI, Web, and Mobile development this year.
+          </p>
+          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-4">Python: The AI King</h2>
+          <p className="text-slate-700 leading-relaxed mb-6">
+            Python remains the top choice for machine learning and data science due to its massive library ecosystem.
+          </p>
+          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-4">TypeScript & Rust</h2>
+          <p className="text-slate-700 leading-relaxed mb-6">
+            TypeScript continues to lead web development, while Rust is becoming the standard for high-performance system programming.
+          </p>
+        </>
+      ),
+      relatedPosts: [
+        { slug: 'cloud-computing-best-practices', title: 'Cloud Best Practices', excerpt: 'How code structure impacts cloud deployment.' },
+        { slug: 'emerging-iot-technologies', title: 'Emerging IoT Tech', excerpt: 'Programming for smart hardware.' },
+      ],
+    },
+
+    'blockchain-and-web3': {
+      category: 'Blockchain & Web3',
+      title: 'Blockchain and Web3: The Future of Decentralized Tech',
+      date: '2025-11-20',
+      readTime: '6 min read',
+      author: 'Mahbub',
+      image: '/blockchain.png',
+      content: (
+        <>
+          <p className="text-xl text-slate-600 leading-relaxed mb-6">
+            Beyond cryptocurrency, blockchain technology is reshaping how we handle identity, ownership, and digital transactions.
+          </p>
+          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-4">Decentralized Finance (DeFi)</h2>
+          <p className="text-slate-700 leading-relaxed mb-6">
+            DeFi continues to provide transparent and accessible financial services without traditional intermediaries like banks.
+          </p>
+          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-4">The Growth of Web3 Apps</h2>
+          <p className="text-slate-700 leading-relaxed mb-6">
+            Web3 applications are giving users control over their data, moving away from the centralized "Big Tech" model.
+          </p>
+        </>
+      ),
+      relatedPosts: [
+        { slug: 'cybersecurity-2025-guide', title: 'Cybersecurity 2025 Guide', excerpt: 'Protecting your crypto and digital identity.' },
+        { slug: 'latest-ai-trends-2025', title: 'AI Trends 2025', excerpt: 'Combining AI with blockchain for smarter contracts.' },
+      ],
+    },
+
+    'emerging-iot-technologies': {
+      category: 'IoT & Smart Tech',
+      title: 'Emerging IoT Technologies: Smart Devices and Connected Worlds',
+      date: '2025-11-15',
+      readTime: '5 min read',
+      author: 'Mahbub',
+      image: '/iot.png',
+      content: (
+        <>
+          <p className="text-xl text-slate-600 leading-relaxed mb-6">
+            The Internet of Things (IoT) is no longer just about smart bulbs; it is about fully integrated systems in healthcare and industry.
+          </p>
+          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-4">Edge Computing</h2>
+          <p className="text-slate-700 leading-relaxed mb-6">
+            Processing data on the device rather than the cloud allows for faster response times in critical fields like autonomous driving.
+          </p>
+          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-4">IoT in Healthcare</h2>
+          <p className="text-slate-700 leading-relaxed mb-6">
+            Wearable sensors are providing real-time patient monitoring, drastically improving preventative care.
+          </p>
+        </>
+      ),
+      relatedPosts: [
+        { slug: 'top-programming-languages-2025', title: 'Top Languages 2025', excerpt: 'C++ and Rust in the world of IoT.' },
+        { slug: 'latest-ai-trends-2025', title: 'AI Trends 2025', excerpt: 'Adding intelligence to the edge.' },
+      ],
+    },
   };
 
   // --- Get current post ---
@@ -134,7 +233,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   if (!post) return <p className="text-center py-20">Post not found.</p>;
 
   return (
+    
     <div className="flex flex-col">
+     
       {/* Back Button */}
       <section className="bg-gradient-to-br from-sky-50 via-white to-indigo-50 py-12">
         <div className="container mx-auto px-4">
