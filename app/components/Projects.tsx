@@ -1,76 +1,133 @@
-'use client';
+"use client";
 
-import { ExternalLink, Github } from 'lucide-react';
-import { useState } from 'react';
+import { ExternalLink, Github } from "lucide-react";
+import { useState } from "react";
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ['All', 'Web App', 'MERN App', 'Library', 'Real Estate'];
+  const categories = [
+    "All",
+    "Web App",
+    "MERN App",
+    "WordPress",
+    "NextJs",
+    "Real Estate",
+  ];
 
   const projects = [
     {
-      title: 'News Website - MERN Stack Application',
-      category: 'Web App',
-      description: 'Bilingual news platform with dynamic frontend, admin dashboard, and secure backend API. Features content management for publishing and media uploads.',
-      image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['React', 'Next.js', 'Node.js', 'MongoDB', 'Cloudinary'],
-      github: 'https://github.com',
-      demo: 'https://www.topnews24.net/',
+      title: "News Website - MERN Stack Application",
+      category: "MERN App",
+      description:
+        "Bilingual news platform with dynamic frontend, admin dashboard, and secure backend API. Features content management for publishing and media uploads.",
+      image: "/projects/topnews.png",
+      tags: ["React", "Next.js", "Node.js", "MongoDB", "Cloudinary"],
+      github: "#",
+      demo: "https://www.topnews24.net/",
     },
     {
-      title: 'Real Estate Management Platform',
-      category: 'Real Estate',
-      description: 'Secure property listing platform with wishlist management, purchase requests, and admin functionality for 100+ listings management.',
-      image: 'https://images.pexels.com/photos/6214476/pexels-photo-6214476.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['React', 'Node.js', 'MongoDB', 'Firebase', 'JWT'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      title: "The Rehab Nest – Rehab & Wellness Clinic Website",
+      category: "NextJs",
+      description:
+        "A fully responsive and SEO-optimized healthcare services website built for The Rehab Nest clinic in Scarborough, showcasing physiotherapy, massage therapy, chiropractic care, chiropody, acupuncture, and counselling services. The site features service details, therapist profiles, blog content, and appointment booking integration to provide a professional online presence and enhanced user experience.",
+      image: "/projects/rehabnest.png",
+      tags: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Responsive Web Design",
+        "SEO Optimization",
+        "Healthcare Website",
+        "CMS Integration",
+        "UI/UX Design",
+      ],
+      github: "https://github.com/yourusername/therehabnest", // replace with your actual repo
+      demo: "https://www.therehabnest.com/",
     },
     {
-      title: 'Community Library Management System',
-      category: 'Library',
-      description: 'Library system automating borrowing processes with admin features for book inventory management (add, update, delete).',
-      image: 'https://images.pexels.com/photos/8438922/pexels-photo-8438922.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['React', 'Node.js', 'MongoDB', 'Firebase', 'Google Maps'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      title: "5W Communications – Strategic PR & Communications Agency",
+      category: "WordPress",
+      description:
+        "A professional communications and public relations agency specializing in storytelling, stakeholder relations, media and government relations, event management, and executive profiling. The site reflects a strategic services offering designed to elevate brands, foster meaningful connections, and deliver impactful communications solutions.",
+      image: "/projects/5wc.png",
+      tags: [
+        "WordPress",
+        "PHP",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Responsive Design",
+        "SEO Optimization",
+        "CMS Development",
+      ],
+      github: "#", // replace with real repo if available
+      demo: "https://5wcommunications.com/",
     },
     {
-      title: 'Tourism Management Application',
-      category: 'MERN App',
-      description: 'Travel recommendation system with personalized suggestions and Google Maps API integration for real-time destination insights.',
-      image: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Google Maps'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      title: "Mohammad Care Home – Therapy & Support Services Website",
+      category: "WordPress",
+      description:
+        "A responsive healthcare services website developed for Mohammad Care Home, designed to showcase psychotherapy and mental health support offerings, appointment scheduling, and client resources. Built with modern web technologies for performance, accessibility, and SEO optimization.",
+      image: "/projects/mch.png",
+      tags: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Responsive Web Design",
+        "SEO Optimization",
+        "UI/UX",
+        "Content Management",
+        "Healthcare Website",
+      ],
+      github: "#",
+      demo: "https://mohammadcarehome.com/",
+    },
+
+    {
+      title: "Community Library Management System",
+      category: "Library",
+      description:
+        "Library system automating borrowing processes with admin features for book inventory management (add, update, delete).",
+      image:
+        "https://images.pexels.com/photos/8438922/pexels-photo-8438922.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: ["React", "Node.js", "MongoDB", "Firebase", "Google Maps"],
+      github: "https://github.com",
+      demo: "https://example.com",
     },
     {
-      title: 'WordPress Portfolio Website',
-      category: 'Web App',
-      description: 'Responsive and scalable WordPress site engineered with HTML, CSS, JavaScript. Optimized for accessibility, SEO, and security compliance.',
-      image: 'https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['WordPress', 'PHP', 'HTML/CSS', 'JavaScript', 'SEO'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      title: "Tourism Management Application",
+      category: "MERN App",
+      description:
+        "Travel recommendation system with personalized suggestions and Google Maps API integration for real-time destination insights.",
+      image:
+        "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: ["React", "Node.js", "Express", "MongoDB", "Google Maps"],
+      github: "https://github.com",
+      demo: "https://example.com",
     },
     {
-      title: 'Rehab Nest - Healthcare Management Platform',
-      category: 'Web App',
-      description: 'Modern healthcare platform built with Next.js and Tailwind CSS. Features appointment scheduling, patient management, and secure health records.',
-      image: 'https://images.pexels.com/photos/3768116/pexels-photo-3768116.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Firebase', 'Responsive Design'],
-      github: 'https://github.com',
-      demo: 'https://rehab-nest.vercel.app/',
+      title: "BizNewsDive – Business & Tech News Site",
+      category: "WordPress",
+      description:
+        "A dynamic news and insights website covering business, tech, economy, gadgets, travel, startups, and global trends. Built on WordPress with a focus on up-to-date content and responsive design to engage readers and support SEO. Powered by WordPress’s flexible CMS platform for scalable publishing.", // Powered by WordPress as seen in site footer :contentReference[oaicite:0]{index=0}
+      image: "/projects/biznews.png",
+      tags: ["WordPress", "News", "Business", "Tech", "SEO"],
+      github: "https://github.com", // replace if you have a real repo
+      demo: "https://biznewsdive.com",
     },
   ];
 
-  const filteredProjects = selectedCategory === 'All' 
-    ? projects 
-    : projects.filter(project => project.category === selectedCategory);
+  const filteredProjects =
+    selectedCategory === "All"
+      ? projects
+      : projects.filter((project) => project.category === selectedCategory);
 
-  const visibleProjects = showAll ? filteredProjects : filteredProjects.slice(0, 3);
+  const visibleProjects = showAll
+    ? filteredProjects
+    : filteredProjects.slice(0, 3);
 
   return (
     <section id="projects" className="py-20 bg-white dark:bg-gray-800">
@@ -90,8 +147,8 @@ export default function Projects() {
               }}
               className={`px-6 py-2.5 rounded-full font-semibold text-sm tracking-wide transition-all duration-300 ${
                 selectedCategory === category
-                  ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/50 scale-105'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:shadow-md hover:scale-103 border border-gray-200 dark:border-gray-600'
+                  ? "bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/50 scale-105"
+                  : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:shadow-md hover:scale-103 border border-gray-200 dark:border-gray-600"
               }`}
             >
               {category}
@@ -159,7 +216,7 @@ export default function Projects() {
             onClick={() => setShowAll(!showAll)}
             className="px-8 py-3 bg-blue-600 hover:bg-blue-700 dark:hover:bg-blue-500 text-white font-semibold rounded-lg transition-colors duration-300"
           >
-            {showAll ? 'Show Less' : 'Show More'}
+            {showAll ? "Show Less" : "Show More"}
           </button>
         </div>
       </div>

@@ -50,15 +50,74 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$providers$2e$tsx__$5b
 ;
 ;
 const metadata = {
-    title: 'Portfolio - Next.js & Tailwind CSS',
-    description: 'A modern portfolio showcasing my work as a full-stack developer',
+    title: {
+        default: 'Md Mahbub E Waduzzaman | Web & Software Developer',
+        template: '%s | Md Mahbub E Waduzzaman'
+    },
+    description: 'Md Mahbub E Waduzzaman is a Web & Software Developer based in Canada, specializing in Next.js, React, MERN Stack, WordPress, and scalable web applications.',
     keywords: [
-        'portfolio',
-        'web development',
-        'next.js',
-        'react',
-        'tailwind'
-    ]
+        'Md Mahbub E Waduzzaman',
+        'Mahbub Waduzzaman',
+        'Web Developer',
+        'Software Developer',
+        'Full Stack Developer',
+        'Next.js Developer',
+        'React Developer',
+        'MERN Stack Developer',
+        'WordPress Developer',
+        'JavaScript',
+        'TypeScript',
+        'Web Developer Canada',
+        'Software Developer Toronto',
+        'Developer Portfolio'
+    ],
+    authors: [
+        {
+            name: 'Md Mahbub E Waduzzaman'
+        }
+    ],
+    creator: 'Md Mahbub E Waduzzaman',
+    publisher: 'Md Mahbub E Waduzzaman',
+    metadataBase: new URL('https://yourdomain.com'),
+    alternates: {
+        canonical: '/'
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+            'max-video-preview': -1
+        }
+    },
+    openGraph: {
+        title: 'Md Mahbub E Waduzzaman | Web & Software Developer',
+        description: 'Explore real-world web and software projects built with Next.js, React, MERN Stack, and WordPress.',
+        url: 'https://yourdomain.com',
+        siteName: 'Mahbub Waduzzaman Portfolio',
+        images: [
+            {
+                url: '/og-image.png',
+                width: 1200,
+                height: 630,
+                alt: 'Mahbub Waduzzaman Developer Portfolio'
+            }
+        ],
+        locale: 'en_CA',
+        type: 'website'
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Md Mahbub E Waduzzaman | Web & Software Developer',
+        description: 'Web & Software Developer specializing in modern, scalable applications.',
+        images: [
+            '/og-image.png'
+        ]
+    },
+    category: 'technology'
 };
 function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
@@ -69,17 +128,17 @@ function RootLayout({ children }) {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/app/layout.tsx",
-                lineNumber: 16,
+                lineNumber: 87,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 15,
+            lineNumber: 86,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 14,
+        lineNumber: 85,
         columnNumber: 5
     }, this);
 }

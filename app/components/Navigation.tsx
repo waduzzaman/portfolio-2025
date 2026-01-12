@@ -25,23 +25,30 @@ export default function Navigation() {
     { label: "Education", href: "#education" },
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
-    { label: "Dev Flow", href: "#work-flow" },
+    // { label: "Dev Flow", href: "#work-flow" },
     { label: "Testimonials", href: "#testimonials" },
 
     { label: "Contact", href: "#contact" },
   ];
 
-  const handleSectionClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
-  ) => {
-    e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
+const handleSectionClick = (
+  e: React.MouseEvent<HTMLAnchorElement>,
+  href: string
+) => {
+  e.preventDefault();
+  const element = document.querySelector(href);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+
+    // Auto-close mobile menu after 5 seconds
+    if (isMenuOpen) {
+      setTimeout(() => {
+        setIsMenuOpen(false);
+      }, 5000);
     }
-  };
+  }
+};
+
 
   return (
     <nav
@@ -182,8 +189,7 @@ export default function Navigation() {
               onClick={() => setIsMenuOpen(false)}
               className="block text-center mt-3 px-4 py-3 rounded-xl
                          bg-gradient-to-r from-blue-600 to-blue-500
-                         text-white font-semibold"
-            >
+                         text-white font-semibold"            >
               <Download className="inline w-4 h-4 mr-2" />
               Resume
             </a>

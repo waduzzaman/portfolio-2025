@@ -63,10 +63,7 @@ function Navigation() {
             label: "Projects",
             href: "#projects"
         },
-        {
-            label: "Dev Flow",
-            href: "#work-flow"
-        },
+        // { label: "Dev Flow", href: "#work-flow" },
         {
             label: "Testimonials",
             href: "#testimonials"
@@ -274,7 +271,7 @@ function Navigation() {
                                     className: "inline w-4 h-4 mr-2"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Navigation.tsx",
-                                    lineNumber: 187,
+                                    lineNumber: 186,
                                     columnNumber: 15
                                 }, this),
                                 "Resume"
@@ -1172,113 +1169,114 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
-'use client';
+"use client";
 ;
 ;
 function Projects() {
     _s();
     const [showAll, setShowAll] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [selectedCategory, setSelectedCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('All');
+    const [selectedCategory, setSelectedCategory] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("All");
     const categories = [
-        'All',
-        'Web App',
-        'MERN App',
-        'Library',
-        'Real Estate'
+        "All",
+        "Web App",
+        "MERN App",
+        "WordPress",
+        "Next.js App",
+        "Real Estate"
     ];
     const projects = [
         {
-            title: 'News Website - MERN Stack Application',
-            category: 'Web App',
-            description: 'Bilingual news platform with dynamic frontend, admin dashboard, and secure backend API. Features content management for publishing and media uploads.',
-            image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
+            title: "News Website - MERN Stack Application",
+            category: "MERN App",
+            description: "Bilingual news platform with dynamic frontend, admin dashboard, and secure backend API. Features content management for publishing and media uploads.",
+            image: "/projects/topnews.png",
             tags: [
-                'React',
-                'Next.js',
-                'Node.js',
-                'MongoDB',
-                'Cloudinary'
+                "React",
+                "Next.js",
+                "Node.js",
+                "MongoDB",
+                "Cloudinary"
             ],
-            github: 'https://github.com',
-            demo: 'https://www.topnews24.net/'
+            github: "#",
+            demo: "https://www.topnews24.net/"
         },
         {
-            title: 'Real Estate Management Platform',
-            category: 'Real Estate',
-            description: 'Secure property listing platform with wishlist management, purchase requests, and admin functionality for 100+ listings management.',
-            image: 'https://images.pexels.com/photos/6214476/pexels-photo-6214476.jpeg?auto=compress&cs=tinysrgb&w=800',
+            title: "Real Estate Management Platform",
+            category: "Real Estate",
+            description: "Secure property listing platform with wishlist management, purchase requests, and admin functionality for 100+ listings management.",
+            image: "https://images.pexels.com/photos/6214476/pexels-photo-6214476.jpeg?auto=compress&cs=tinysrgb&w=800",
             tags: [
-                'React',
-                'Node.js',
-                'MongoDB',
-                'Firebase',
-                'JWT'
+                "React",
+                "Node.js",
+                "MongoDB",
+                "Firebase",
+                "JWT"
             ],
-            github: 'https://github.com',
-            demo: 'https://example.com'
+            github: "https://github.com",
+            demo: "https://example.com"
         },
         {
-            title: 'Community Library Management System',
-            category: 'Library',
-            description: 'Library system automating borrowing processes with admin features for book inventory management (add, update, delete).',
-            image: 'https://images.pexels.com/photos/8438922/pexels-photo-8438922.jpeg?auto=compress&cs=tinysrgb&w=800',
+            title: "Community Library Management System",
+            category: "Library",
+            description: "Library system automating borrowing processes with admin features for book inventory management (add, update, delete).",
+            image: "https://images.pexels.com/photos/8438922/pexels-photo-8438922.jpeg?auto=compress&cs=tinysrgb&w=800",
             tags: [
-                'React',
-                'Node.js',
-                'MongoDB',
-                'Firebase',
-                'Google Maps'
+                "React",
+                "Node.js",
+                "MongoDB",
+                "Firebase",
+                "Google Maps"
             ],
-            github: 'https://github.com',
-            demo: 'https://example.com'
+            github: "https://github.com",
+            demo: "https://example.com"
         },
         {
-            title: 'Tourism Management Application',
-            category: 'MERN App',
-            description: 'Travel recommendation system with personalized suggestions and Google Maps API integration for real-time destination insights.',
-            image: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800',
+            title: "Tourism Management Application",
+            category: "MERN App",
+            description: "Travel recommendation system with personalized suggestions and Google Maps API integration for real-time destination insights.",
+            image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800",
             tags: [
-                'React',
-                'Node.js',
-                'Express',
-                'MongoDB',
-                'Google Maps'
+                "React",
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Google Maps"
             ],
-            github: 'https://github.com',
-            demo: 'https://example.com'
+            github: "https://github.com",
+            demo: "https://example.com"
         },
         {
-            title: 'WordPress Portfolio Website',
-            category: 'Web App',
-            description: 'Responsive and scalable WordPress site engineered with HTML, CSS, JavaScript. Optimized for accessibility, SEO, and security compliance.',
-            image: 'https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=800',
+            title: "BizNewsDive – Business & Tech News Site",
+            category: "WordPress",
+            description: "A dynamic news and insights website covering business, tech, economy, gadgets, travel, startups, and global trends. Built on WordPress with a focus on up-to-date content and responsive design to engage readers and support SEO. Powered by WordPress’s flexible CMS platform for scalable publishing.",
+            image: "/projects/biznews.png",
             tags: [
-                'WordPress',
-                'PHP',
-                'HTML/CSS',
-                'JavaScript',
-                'SEO'
+                "WordPress",
+                "News",
+                "Business",
+                "Tech",
+                "SEO"
             ],
-            github: 'https://github.com',
-            demo: 'https://example.com'
+            github: "https://github.com",
+            demo: "https://biznewsdive.com"
         },
         {
-            title: 'Rehab Nest - Healthcare Management Platform',
-            category: 'Web App',
-            description: 'Modern healthcare platform built with Next.js and Tailwind CSS. Features appointment scheduling, patient management, and secure health records.',
-            image: 'https://images.pexels.com/photos/3768116/pexels-photo-3768116.jpeg?auto=compress&cs=tinysrgb&w=800',
+            title: "Rehab Nest - Healthcare Management Platform",
+            category: "Next.js App",
+            description: "Modern healthcare platform built with Next.js and Tailwind CSS. Features appointment scheduling, patient management, and secure health records.",
+            image: "https://images.pexels.com/photos/3768116/pexels-photo-3768116.jpeg?auto=compress&cs=tinysrgb&w=800",
             tags: [
-                'Next.js',
-                'TypeScript',
-                'Tailwind CSS',
-                'Firebase',
-                'Responsive Design'
+                "Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "Firebase",
+                "Responsive Design"
             ],
-            github: 'https://github.com',
-            demo: 'https://rehab-nest.vercel.app/'
+            github: "https://github.com",
+            demo: "https://rehab-nest.vercel.app/"
         }
     ];
-    const filteredProjects = selectedCategory === 'All' ? projects : projects.filter((project)=>project.category === selectedCategory);
+    const filteredProjects = selectedCategory === "All" ? projects : projects.filter((project)=>project.category === selectedCategory);
     const visibleProjects = showAll ? filteredProjects : filteredProjects.slice(0, 3);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "projects",
@@ -1291,14 +1289,14 @@ function Projects() {
                     children: "Featured Projects"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects.tsx",
-                    lineNumber: 78,
+                    lineNumber: 105,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "w-20 h-1 bg-blue-600 mx-auto mb-12"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects.tsx",
-                    lineNumber: 81,
+                    lineNumber: 108,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1308,16 +1306,16 @@ function Projects() {
                                 setSelectedCategory(category);
                                 setShowAll(false);
                             },
-                            className: `px-6 py-2.5 rounded-full font-semibold text-sm tracking-wide transition-all duration-300 ${selectedCategory === category ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/50 scale-105' : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:shadow-md hover:scale-103 border border-gray-200 dark:border-gray-600'}`,
+                            className: `px-6 py-2.5 rounded-full font-semibold text-sm tracking-wide transition-all duration-300 ${selectedCategory === category ? "bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/50 scale-105" : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:shadow-md hover:scale-103 border border-gray-200 dark:border-gray-600"}`,
                             children: category
                         }, category, false, {
                             fileName: "[project]/app/components/Projects.tsx",
-                            lineNumber: 85,
+                            lineNumber: 112,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects.tsx",
-                    lineNumber: 83,
+                    lineNumber: 110,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1333,12 +1331,12 @@ function Projects() {
                                         className: "w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Projects.tsx",
-                                        lineNumber: 109,
+                                        lineNumber: 136,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Projects.tsx",
-                                    lineNumber: 108,
+                                    lineNumber: 135,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1349,7 +1347,7 @@ function Projects() {
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 143,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1357,7 +1355,7 @@ function Projects() {
                                             children: project.description
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects.tsx",
-                                            lineNumber: 119,
+                                            lineNumber: 146,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1367,12 +1365,12 @@ function Projects() {
                                                     children: tag
                                                 }, idx, false, {
                                                     fileName: "[project]/app/components/Projects.tsx",
-                                                    lineNumber: 124,
+                                                    lineNumber: 151,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects.tsx",
-                                            lineNumber: 122,
+                                            lineNumber: 149,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1388,20 +1386,20 @@ function Projects() {
                                                             className: "w-5 h-5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/Projects.tsx",
-                                                            lineNumber: 139,
+                                                            lineNumber: 166,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "Code"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/Projects.tsx",
-                                                            lineNumber: 140,
+                                                            lineNumber: 167,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/Projects.tsx",
-                                                    lineNumber: 133,
+                                                    lineNumber: 160,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1414,43 +1412,43 @@ function Projects() {
                                                             className: "w-5 h-5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/Projects.tsx",
-                                                            lineNumber: 148,
+                                                            lineNumber: 175,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "Demo"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/Projects.tsx",
-                                                            lineNumber: 149,
+                                                            lineNumber: 176,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/Projects.tsx",
-                                                    lineNumber: 142,
+                                                    lineNumber: 169,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/components/Projects.tsx",
-                                            lineNumber: 132,
+                                            lineNumber: 159,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/Projects.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 142,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, index, true, {
                             fileName: "[project]/app/components/Projects.tsx",
-                            lineNumber: 104,
+                            lineNumber: 131,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects.tsx",
-                    lineNumber: 102,
+                    lineNumber: 129,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1458,30 +1456,30 @@ function Projects() {
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>setShowAll(!showAll),
                         className: "px-8 py-3 bg-blue-600 hover:bg-blue-700 dark:hover:bg-blue-500 text-white font-semibold rounded-lg transition-colors duration-300",
-                        children: showAll ? 'Show Less' : 'Show More'
+                        children: showAll ? "Show Less" : "Show More"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Projects.tsx",
-                        lineNumber: 158,
+                        lineNumber: 185,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects.tsx",
-                    lineNumber: 157,
+                    lineNumber: 184,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Projects.tsx",
-            lineNumber: 77,
+            lineNumber: 104,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Projects.tsx",
-        lineNumber: 76,
+        lineNumber: 103,
         columnNumber: 5
     }, this);
 }
-_s(Projects, "MLrL+b3fwrtwbwiPWKlfstvsLY4=");
+_s(Projects, "hDMBchMt3RE6J4fyoraxRnBhYl8=");
 _c = Projects;
 var _c;
 __turbopack_context__.k.register(_c, "Projects");
