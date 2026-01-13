@@ -1,38 +1,39 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import React from 'react';
-import { Providers } from './providers';
+import "./globals.css";
+import type { Metadata } from "next";
+import React from "react";
+import { Providers } from "./providers";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: {
-    default: 'Md Mahbub E Waduzzaman | Web & Software Developer',
-    template: '%s | Md Mahbub E Waduzzaman',
+    default: "Md Mahbub E Waduzzaman | Web & Software Developer",
+    template: "%s | Md Mahbub E Waduzzaman",
   },
   description:
-    'Md Mahbub E Waduzzaman is a Web & Software Developer based in Canada, specializing in Next.js, React, MERN Stack, WordPress, and scalable web applications.',
+    "Md Mahbub E Waduzzaman is a Web & Software Developer based in Canada, specializing in Next.js, React, MERN Stack, WordPress, and scalable web applications.",
   keywords: [
-    'Md Mahbub E Waduzzaman',
-    'Mahbub Waduzzaman',
-    'Web Developer',
-    'Software Developer',
-    'Full Stack Developer',
-    'Next.js Developer',
-    'React Developer',
-    'MERN Stack Developer',
-    'WordPress Developer',
-    'JavaScript',
-    'TypeScript',
-    'Web Developer Canada',
-    'Software Developer Toronto',
-    'Developer Portfolio',
+    "Md Mahbub E Waduzzaman",
+    "Mahbub Waduzzaman",
+    "Web Developer",
+    "Software Developer",
+    "Full Stack Developer",
+    "Next.js Developer",
+    "React Developer",
+    "MERN Stack Developer",
+    "WordPress Developer",
+    "JavaScript",
+    "TypeScript",
+    "Web Developer Canada",
+    "Software Developer Toronto",
+    "Developer Portfolio",
   ],
-  authors: [{ name: 'Md Mahbub E Waduzzaman' }],
-  creator: 'Md Mahbub E Waduzzaman',
-  publisher: 'Md Mahbub E Waduzzaman',
+  authors: [{ name: "Md Mahbub E Waduzzaman" }],
+  creator: "Md Mahbub E Waduzzaman",
+  publisher: "Md Mahbub E Waduzzaman",
 
-  metadataBase: new URL('https://waduzzaman.com'), 
+  metadataBase: new URL("https://waduzzaman.com"),
   alternates: {
-    canonical: '/',
+    canonical: "/",
   },
 
   robots: {
@@ -41,39 +42,39 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-      'max-video-preview': -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
 
   openGraph: {
-    title: 'Md Mahbub E Waduzzaman | Web & Software Developer',
+    title: "Md Mahbub E Waduzzaman | Web & Software Developer",
     description:
-      'Explore real-world web and software projects built with Next.js, React, MERN Stack, and WordPress.',
-    url: 'https://waduzzaman.com',
-    siteName: 'Mahbub Waduzzaman Portfolio',
+      "Explore real-world web and software projects built with Next.js, React, MERN Stack, and WordPress.",
+    url: "https://waduzzaman.com",
+    siteName: "Mahbub Waduzzaman Portfolio",
     images: [
       {
-        url: '/og-image.png',
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: 'Mahbub Waduzzaman Developer Portfolio',
+        alt: "Mahbub Waduzzaman Developer Portfolio",
       },
     ],
-    locale: 'en_CA',
-    type: 'website',
+    locale: "en_CA",
+    type: "website",
   },
 
   twitter: {
-    card: 'summary_large_image',
-    title: 'Md Mahbub E Waduzzaman | Web & Software Developer',
+    card: "summary_large_image",
+    title: "Md Mahbub E Waduzzaman | Web & Software Developer",
     description:
-      'Web & Software Developer specializing in modern, scalable applications.',
-    images: ['/og-image.png'],
+      "Web & Software Developer specializing in modern, scalable applications.",
+    images: ["/og-image.png"],
   },
 
-  category: 'technology',
+  category: "technology",
 };
 
 export default function RootLayout({
@@ -85,6 +86,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );
