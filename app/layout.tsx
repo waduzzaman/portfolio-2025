@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   creator: 'Md Mahbub E Waduzzaman',
   publisher: 'Md Mahbub E Waduzzaman',
 
-  metadataBase: new URL('https://yourdomain.com'), // 🔁 replace with real domain
+  metadataBase: new URL('https://waduzzaman.com'), // 🔁 replace with real domain
   alternates: {
     canonical: '/',
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: 'Md Mahbub E Waduzzaman | Web & Software Developer',
     description:
       'Explore real-world web and software projects built with Next.js, React, MERN Stack, and WordPress.',
-    url: 'https://yourdomain.com',
+    url: 'https://waduzzaman.com',
     siteName: 'Mahbub Waduzzaman Portfolio',
     images: [
       {

@@ -85,7 +85,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent uppercase">
             Waduzzaman
           </Link>
 
@@ -98,7 +98,7 @@ export default function Navigation() {
                   key={item.label}
                   href={item.href}
                   onClick={(e) => handleSectionClick(e, item.href)}
-                  className={`relative px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300
+                  className={`relative px-2 py-2 rounded-full text-base font-semibold transition-all duration-300 
                     ${active ? "text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/20" : "text-gray-600 dark:text-gray-400 hover:text-blue-600"}
                   `}
                 >
@@ -110,11 +110,11 @@ export default function Navigation() {
 
             <Link
               href="/blog"
-              className={`relative px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300
+              className={`relative px-1 py-2 rounded-full text-sm font-semibold transition-all duration-300 
                 ${isBlogActive ? "text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/20" : "text-gray-600 dark:text-gray-400 hover:text-blue-600"}
               `}
             >
-              Blog
+              Blogs
               <span className={`absolute bottom-1 left-1/2 -translate-x-1/2 h-[2px] bg-blue-600 dark:bg-blue-400 transition-all duration-300 ${isBlogActive ? "w-4 opacity-100" : "w-0 opacity-0"}`} />
             </Link>
 
@@ -161,7 +161,7 @@ export default function Navigation() {
                   key={item.label}
                   href={item.href}
                   onClick={(e) => handleSectionClick(e, item.href)}
-                  className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all
+                  className={`flex items-center justify-between px-4 py-2 rounded-xl transition-all 
                     ${active ? "bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-bold border-l-4 border-blue-600" : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800"}
                   `}
                 >
@@ -174,11 +174,11 @@ export default function Navigation() {
             <Link
               href="/blog"
               onClick={() => setIsMenuOpen(false)}
-              className={`flex items-center justify-between px-4 py-3 rounded-xl transition-all
+              className={`flex items-center justify-between px-4 py-2 rounded-xl transition-all uppercase
                 ${isBlogActive ? "bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-bold border-l-4 border-blue-600" : "text-gray-600 dark:text-gray-400"}
               `}
             >
-              Blog
+              Blogs
               {isBlogActive && <div className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400" />}
             </Link>
 

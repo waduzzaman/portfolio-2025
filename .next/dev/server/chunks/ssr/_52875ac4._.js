@@ -78,7 +78,7 @@ const metadata = {
     ],
     creator: 'Md Mahbub E Waduzzaman',
     publisher: 'Md Mahbub E Waduzzaman',
-    metadataBase: new URL('https://yourdomain.com'),
+    metadataBase: new URL('https://waduzzaman.com'),
     alternates: {
         canonical: '/'
     },
@@ -96,7 +96,7 @@ const metadata = {
     openGraph: {
         title: 'Md Mahbub E Waduzzaman | Web & Software Developer',
         description: 'Explore real-world web and software projects built with Next.js, React, MERN Stack, and WordPress.',
-        url: 'https://yourdomain.com',
+        url: 'https://waduzzaman.com',
         siteName: 'Mahbub Waduzzaman Portfolio',
         images: [
             {

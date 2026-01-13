@@ -129,7 +129,7 @@ function Navigation() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             href: "/",
-                            className: "text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent",
+                            className: "text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent uppercase",
                             children: "Waduzzaman"
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navigation.tsx",
@@ -144,7 +144,7 @@ function Navigation() {
                                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                         href: item.href,
                                         onClick: (e)=>handleSectionClick(e, item.href),
-                                        className: `relative px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300
+                                        className: `relative px-2 py-2 rounded-full text-base font-semibold transition-all duration-300 
                     ${active ? "text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/20" : "text-gray-600 dark:text-gray-400 hover:text-blue-600"}
                   `,
                                         children: [
@@ -165,11 +165,11 @@ function Navigation() {
                                 }),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     href: "/blog",
-                                    className: `relative px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300
+                                    className: `relative px-1 py-2 rounded-full text-sm font-semibold transition-all duration-300 
                 ${isBlogActive ? "text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/20" : "text-gray-600 dark:text-gray-400 hover:text-blue-600"}
               `,
                                     children: [
-                                        "Blog",
+                                        "Blogs",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: `absolute bottom-1 left-1/2 -translate-x-1/2 h-[2px] bg-blue-600 dark:bg-blue-400 transition-all duration-300 ${isBlogActive ? "w-4 opacity-100" : "w-0 opacity-0"}`
                                         }, void 0, false, {
@@ -317,7 +317,7 @@ function Navigation() {
                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: item.href,
                                     onClick: (e)=>handleSectionClick(e, item.href),
-                                    className: `flex items-center justify-between px-4 py-3 rounded-xl transition-all
+                                    className: `flex items-center justify-between px-4 py-2 rounded-xl transition-all 
                     ${active ? "bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-bold border-l-4 border-blue-600" : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800"}
                   `,
                                     children: [
@@ -339,11 +339,11 @@ function Navigation() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/blog",
                                 onClick: ()=>setIsMenuOpen(false),
-                                className: `flex items-center justify-between px-4 py-3 rounded-xl transition-all
+                                className: `flex items-center justify-between px-4 py-2 rounded-xl transition-all uppercase
                 ${isBlogActive ? "bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-bold border-l-4 border-blue-600" : "text-gray-600 dark:text-gray-400"}
               `,
                                 children: [
-                                    "Blog",
+                                    "Blogs",
                                     isBlogActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400"
                                     }, void 0, false, {
