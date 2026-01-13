@@ -13,8 +13,8 @@ export default function Projects() {
     "MERN App",
     "WordPress",
     "NextJs",
-    "Android App"
-   
+    "Android App",
+    "SaaS",
   ];
 
   const projects = [
@@ -68,106 +68,108 @@ export default function Projects() {
       demo: "https://5wcommunications.com/",
     },
     {
-  title: 'AK Marketings – Business Expansion & Digital Services',
-  category: 'NextJs',
-  description: 'A responsive corporate website built for AK Marketings, a business expansion and digital services provider based in Canada. The platform showcases cross-border market entry support, marketing services (including digital marketing, SEO, brand development, and web design & development), client testimonials, and company information. Designed with modern UI/UX, SEO structure, and mobile-first responsiveness.',
-  image: '/projects/ak-marketings.png',
-  tags: [
-    'Next.js',
-    'React',
-    'Tailwind CSS',
-    'Responsive Web Design',
-    'SEO Optimization',
-    'Business Services Website',
-    'UI/UX',
-    'Content Strategy'
-  ],
-  github: '#', // replace with your actual repo
-  demo: 'https://www.akmarketings.com/',
-},
+      title: "AK Marketings – Business Expansion & Digital Services",
+      category: "NextJs",
+      description:
+        "A responsive corporate website built for AK Marketings, a business expansion and digital services provider based in Canada. The platform showcases cross-border market entry support, marketing services (including digital marketing, SEO, brand development, and web design & development), client testimonials, and company information. Designed with modern UI/UX, SEO structure, and mobile-first responsiveness.",
+      image: "/projects/ak-marketings.png",
+      tags: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Responsive Web Design",
+        "SEO Optimization",
+        "Business Services Website",
+        "UI/UX",
+        "Content Strategy",
+      ],
+      github: "#", // replace with your actual repo
+      demo: "https://www.akmarketings.com/",
+    },
 
-{
-  title: 'My Canada Journey – Immigration & Settlement Guide',
-  category: 'NextJs',
-  description: 'A fully responsive and content-rich informational website built to provide newcomers and aspiring immigrants with practical guidance, tips, and insights about living in Canada. Features structured content around immigration pathways, settlement resources, cultural adaptation, community highlights, and support services. Designed with a modern UI, performance-focused architecture, and SEO-optimized structure.',
-  image: '/projects/canada-info.png',
-  tags: [
-    'Next.js',
-    'React',
-    'Tailwind CSS',
-    'Responsive Web Design',
-    'SEO Optimization',
-    'Content Strategy',
-    'UI/UX',
-    'Performance Optimization'
-  ],
-  github: '#', // replace with your actual repo link
-  demo: 'https://www.mycanadajourney.ca/',
-},
+    {
+      title: "My Canada Journey – Immigration & Settlement Guide",
+      category: "NextJs",
+      description:
+        "A fully responsive and content-rich informational website built to provide newcomers and aspiring immigrants with practical guidance, tips, and insights about living in Canada. Features structured content around immigration pathways, settlement resources, cultural adaptation, community highlights, and support services. Designed with a modern UI, performance-focused architecture, and SEO-optimized structure.",
+      image: "/projects/canada-info.png",
+      tags: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Responsive Web Design",
+        "SEO Optimization",
+        "Content Strategy",
+        "UI/UX",
+        "Performance Optimization",
+      ],
+      github: "#", // replace with your actual repo link
+      demo: "https://www.mycanadajourney.ca/",
+    },
 
-{
-  title: 'Halal Checker – Android App',
-  category: 'Android App',
-  description:
-    'A native Android application that helps users instantly verify whether food products are Halal by scanning barcodes or searching product names. The app integrates the Open Food Facts public API to fetch ingredient data and applies Halal compliance logic to highlight permissible, doubtful, and non-Halal ingredients. Built with Java following clean architecture principles, focusing on performance, usability, and real-world consumer needs.',
-  image: '/projects/halal-checker.jpeg',
-  tags: [
-    'Android',
-    'Java',
-    'Open Food Facts API',
-    'REST API Integration',
-    'Barcode Scanning',
-    'JSON Parsing',
-    'Mobile UI/UX',
-    'Material Design',
-    'Clean Architecture'
-  ],
-  github: '#', // replace with actual repo
-  demo: '#', // optional
-},
+    {
+      title: "Halal Checker – Android App",
+      category: "Android App",
+      description:
+        "A native Android application that helps users instantly verify whether food products are Halal by scanning barcodes or searching product names. The app integrates the Open Food Facts public API to fetch ingredient data and applies Halal compliance logic to highlight permissible, doubtful, and non-Halal ingredients. Built with Java following clean architecture principles, focusing on performance, usability, and real-world consumer needs.",
+      image: "/projects/halal-checker.jpeg",
+      tags: [
+        "Android",
+        "Java",
+        "Open Food Facts API",
+        "REST API Integration",
+        "Barcode Scanning",
+        "JSON Parsing",
+        "Mobile UI/UX",
+        "Material Design",
+        "Clean Architecture",
+      ],
+      github: "#", // replace with actual repo
+      demo: "#", // optional
+    },
 
-{
-  title: 'SkillMentor – Android Learning & Self-Improvement App',
-  category: 'Android App',
-  description: 'A native Android application designed to provide users with structured learning and self-improvement tools covering soft skills, professional development, mental health, daily routines, productivity techniques, and motivational content. Built with Java/Kotlin and optimized for intuitive mobile user experience and personal growth workflows.',
-  image: '/projects/code-mentor.jpeg',
-  tags: [
-    'Android',
-    'Java',
-    'Kotlin',
-    'Mobile UI/UX',
-    'Material Design',
-    'Self-Improvement',
-    'Learning App',
-    'REST API',
-    'Performance Optimization',
-    'Education App'
-  ],
-  github: '#', // replace with your actual repo
-  demo: 'https://play.google.com/store/apps/details?id=com.mahbub.skillmentor',
-},
+    {
+      title: "SkillMentor – Android Learning & Self-Improvement App",
+      category: "Android App",
+      description:
+        "A native Android application designed to provide users with structured learning and self-improvement tools covering soft skills, professional development, mental health, daily routines, productivity techniques, and motivational content. Built with Java/Kotlin and optimized for intuitive mobile user experience and personal growth workflows.",
+      image: "/projects/code-mentor.jpeg",
+      tags: [
+        "Android",
+        "Java",
+        "Kotlin",
+        "Mobile UI/UX",
+        "Material Design",
+        "Self-Improvement",
+        "Learning App",
+        "REST API",
+        "Performance Optimization",
+        "Education App",
+      ],
+      github: "#", // replace with your actual repo
+      demo: "https://play.google.com/store/apps/details?id=com.mahbub.skillmentor",
+    },
 
-{
-  title: 'Zakat Calculator – Java Application',
-  category: 'Android App',
-  description: 'A Java-based Zakat Calculator designed to help users calculate Zakat according to Islamic financial principles. Users can input assets like cash, savings, gold, silver, and investments, along with liabilities. The app computes Zakat eligibility (Nisab) and payable amount using precise calculation logic. Built entirely with Java, emphasizing correctness, maintainability, and user-friendly console interactions.',
-  image: '/projects/zakat-calculator.jpeg',
-  tags: [
-    'Java',
-    'OOP',
-    'Islamic Finance',
-    'Zakat Calculator',
-    'Financial Calculations',
-    'Data Validation',
-    'Clean Code',
-    'Console Application',
-    'Problem Solving'
-  ],
-  github: '#', // replace with your actual repo
-  demo: '', // optional CLI demo link
-}, 
-
-
+    {
+      title: "Zakat Calculator – Java Application",
+      category: "Android App",
+      description:
+        "A Java-based Zakat Calculator designed to help users calculate Zakat according to Islamic financial principles. Users can input assets like cash, savings, gold, silver, and investments, along with liabilities. The app computes Zakat eligibility (Nisab) and payable amount using precise calculation logic. Built entirely with Java, emphasizing correctness, maintainability, and user-friendly console interactions.",
+      image: "/projects/zakat-calculator.jpeg",
+      tags: [
+        "Java",
+        "OOP",
+        "Islamic Finance",
+        "Zakat Calculator",
+        "Financial Calculations",
+        "Data Validation",
+        "Clean Code",
+        "Console Application",
+        "Problem Solving",
+      ],
+      github: "#", // replace with your actual repo
+      demo: "", // optional CLI demo link
+    },
 
     {
       title: "Mohammad Care Home – Therapy & Support Services Website",
@@ -194,39 +196,38 @@ export default function Projects() {
       category: "Library",
       description:
         "Library system automating borrowing processes with admin features for book inventory management (add, update, delete).",
-      image:
-        "/projects/library.png",
+      image: "/projects/library.png",
       tags: ["React", "Node.js", "MongoDB", "Firebase", "Google Maps"],
       github: "https://github.com",
       demo: "https://example.com",
     },
     {
-  title: 'Tuxedo Musalla Prayer Times',
-  category: 'NextJs',
-  description: 'A responsive prayer times web application that displays accurate Salah (Islamic prayer) timings for Tuxedo Musalla based on the user’s location and daily solar calculations. Built with modern web technologies and optimized for performance, accessibility, and mobile-friendly design.',
-  image: '/projects/salah-time.png',
-  tags: [
-    'Next.js',
-    'React',
-    'Tailwind CSS',
-    'Responsive Design',
-    'API Integration',
-    'Location Services',
-    'Prayer Times',
-    'Utility App',
-    'SEO Optimization'
-  ],
-  github: 'https://github.com/yourusername/tuxedo-musalla-prayer-times', // replace with actual repo
-  demo: 'https://tuxedo-musalla-prayer-times.vercel.app/',
-},
+      title: "Tuxedo Musalla Prayer Times",
+      category: "NextJs",
+      description:
+        "A responsive prayer times web application that displays accurate Salah (Islamic prayer) timings for Tuxedo Musalla based on the user’s location and daily solar calculations. Built with modern web technologies and optimized for performance, accessibility, and mobile-friendly design.",
+      image: "/projects/salah-time.png",
+      tags: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Responsive Design",
+        "API Integration",
+        "Location Services",
+        "Prayer Times",
+        "Utility App",
+        "SEO Optimization",
+      ],
+      github: "https://github.com/yourusername/tuxedo-musalla-prayer-times", // replace with actual repo
+      demo: "https://tuxedo-musalla-prayer-times.vercel.app/",
+    },
 
     {
       title: "Tourism Management Application",
       category: "MERN App",
       description:
         "Travel recommendation system with personalized suggestions and Google Maps API integration for real-time destination insights.",
-      image:
-        "/projects/travel.png",
+      image: "/projects/travel.png",
       tags: ["React", "Node.js", "Express", "MongoDB", "Google Maps"],
       github: "https://github.com",
       demo: "https://example.com",
@@ -241,6 +242,48 @@ export default function Projects() {
       github: "https://github.com", // replace if you have a real repo
       demo: "https://biznewsdive.com",
     },
+    {
+      title: "Bangla Rannaghor – Bengali Recipe & Cooking Website",
+      category: "NextJs",
+      description:
+        "A responsive Bengali cuisine recipe website showcasing a wide variety of traditional and modern recipes with rich visuals and easy-to-follow cooking instructions. Built with Next.js and modern frontend technologies to deliver a fast, SEO-optimized experience for food enthusiasts and home cooks.",
+      image:
+        "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Responsive Web Design",
+        "Recipe Website",
+        "SEO Optimization",
+        "UI/UX",
+        "Content-Rich Site",
+      ],
+      github: "#", // replace with your actual repo
+      demo: "https://bangla-rannaghor.vercel.app/",
+    },
+
+    {
+  title: 'ATS Resume Builder – Next.js SaaS Application',
+  category: 'SaaS',
+  description: 'A full-stack ATS-optimized resume builder web app that enables users to create professional, recruiter-friendly resumes tailored for applicant tracking systems. Built with Next.js, featuring intuitive form workflows, dynamic resume previews, user authentication, and integrated payment processing for premium features. Designed for performance, usability, and conversion-focused UX.',
+  image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+  tags: [
+    'Next.js',
+    'React',
+    'Tailwind CSS',
+    'Responsive Web Design',
+    'SaaS',
+    'User Auth',
+    'Payment Integration',
+    'ATS Optimization',
+    'SEO Optimization',
+    'UI/UX Design'
+  ],
+  github: 'https://github.com/yourusername/ats-resume-builder', // replace with your actual repository
+  demo: 'https://ats-resume-gamma.vercel.app/',
+}
+
   ];
 
   const filteredProjects =

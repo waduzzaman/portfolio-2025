@@ -1311,7 +1311,8 @@ function Projects() {
         "MERN App",
         "WordPress",
         "NextJs",
-        "Android App"
+        "Android App",
+        "SaaS"
     ];
     const projects = [
         {
@@ -1367,98 +1368,98 @@ function Projects() {
             demo: "https://5wcommunications.com/"
         },
         {
-            title: 'AK Marketings – Business Expansion & Digital Services',
-            category: 'NextJs',
-            description: 'A responsive corporate website built for AK Marketings, a business expansion and digital services provider based in Canada. The platform showcases cross-border market entry support, marketing services (including digital marketing, SEO, brand development, and web design & development), client testimonials, and company information. Designed with modern UI/UX, SEO structure, and mobile-first responsiveness.',
-            image: '/projects/ak-marketings.png',
+            title: "AK Marketings – Business Expansion & Digital Services",
+            category: "NextJs",
+            description: "A responsive corporate website built for AK Marketings, a business expansion and digital services provider based in Canada. The platform showcases cross-border market entry support, marketing services (including digital marketing, SEO, brand development, and web design & development), client testimonials, and company information. Designed with modern UI/UX, SEO structure, and mobile-first responsiveness.",
+            image: "/projects/ak-marketings.png",
             tags: [
-                'Next.js',
-                'React',
-                'Tailwind CSS',
-                'Responsive Web Design',
-                'SEO Optimization',
-                'Business Services Website',
-                'UI/UX',
-                'Content Strategy'
+                "Next.js",
+                "React",
+                "Tailwind CSS",
+                "Responsive Web Design",
+                "SEO Optimization",
+                "Business Services Website",
+                "UI/UX",
+                "Content Strategy"
             ],
-            github: '#',
-            demo: 'https://www.akmarketings.com/'
+            github: "#",
+            demo: "https://www.akmarketings.com/"
         },
         {
-            title: 'My Canada Journey – Immigration & Settlement Guide',
-            category: 'NextJs',
-            description: 'A fully responsive and content-rich informational website built to provide newcomers and aspiring immigrants with practical guidance, tips, and insights about living in Canada. Features structured content around immigration pathways, settlement resources, cultural adaptation, community highlights, and support services. Designed with a modern UI, performance-focused architecture, and SEO-optimized structure.',
-            image: '/projects/canada-info.png',
+            title: "My Canada Journey – Immigration & Settlement Guide",
+            category: "NextJs",
+            description: "A fully responsive and content-rich informational website built to provide newcomers and aspiring immigrants with practical guidance, tips, and insights about living in Canada. Features structured content around immigration pathways, settlement resources, cultural adaptation, community highlights, and support services. Designed with a modern UI, performance-focused architecture, and SEO-optimized structure.",
+            image: "/projects/canada-info.png",
             tags: [
-                'Next.js',
-                'React',
-                'Tailwind CSS',
-                'Responsive Web Design',
-                'SEO Optimization',
-                'Content Strategy',
-                'UI/UX',
-                'Performance Optimization'
+                "Next.js",
+                "React",
+                "Tailwind CSS",
+                "Responsive Web Design",
+                "SEO Optimization",
+                "Content Strategy",
+                "UI/UX",
+                "Performance Optimization"
             ],
-            github: '#',
-            demo: 'https://www.mycanadajourney.ca/'
+            github: "#",
+            demo: "https://www.mycanadajourney.ca/"
         },
         {
-            title: 'Halal Checker – Android App',
-            category: 'Android App',
-            description: 'A native Android application that helps users instantly verify whether food products are Halal by scanning barcodes or searching product names. The app integrates the Open Food Facts public API to fetch ingredient data and applies Halal compliance logic to highlight permissible, doubtful, and non-Halal ingredients. Built with Java following clean architecture principles, focusing on performance, usability, and real-world consumer needs.',
-            image: '/projects/halal-checker.jpeg',
+            title: "Halal Checker – Android App",
+            category: "Android App",
+            description: "A native Android application that helps users instantly verify whether food products are Halal by scanning barcodes or searching product names. The app integrates the Open Food Facts public API to fetch ingredient data and applies Halal compliance logic to highlight permissible, doubtful, and non-Halal ingredients. Built with Java following clean architecture principles, focusing on performance, usability, and real-world consumer needs.",
+            image: "/projects/halal-checker.jpeg",
             tags: [
-                'Android',
-                'Java',
-                'Open Food Facts API',
-                'REST API Integration',
-                'Barcode Scanning',
-                'JSON Parsing',
-                'Mobile UI/UX',
-                'Material Design',
-                'Clean Architecture'
+                "Android",
+                "Java",
+                "Open Food Facts API",
+                "REST API Integration",
+                "Barcode Scanning",
+                "JSON Parsing",
+                "Mobile UI/UX",
+                "Material Design",
+                "Clean Architecture"
             ],
-            github: '#',
-            demo: '#'
+            github: "#",
+            demo: "#"
         },
         {
-            title: 'SkillMentor – Android Learning & Self-Improvement App',
-            category: 'Android App',
-            description: 'A native Android application designed to provide users with structured learning and self-improvement tools covering soft skills, professional development, mental health, daily routines, productivity techniques, and motivational content. Built with Java/Kotlin and optimized for intuitive mobile user experience and personal growth workflows.',
-            image: '/projects/code-mentor.jpeg',
+            title: "SkillMentor – Android Learning & Self-Improvement App",
+            category: "Android App",
+            description: "A native Android application designed to provide users with structured learning and self-improvement tools covering soft skills, professional development, mental health, daily routines, productivity techniques, and motivational content. Built with Java/Kotlin and optimized for intuitive mobile user experience and personal growth workflows.",
+            image: "/projects/code-mentor.jpeg",
             tags: [
-                'Android',
-                'Java',
-                'Kotlin',
-                'Mobile UI/UX',
-                'Material Design',
-                'Self-Improvement',
-                'Learning App',
-                'REST API',
-                'Performance Optimization',
-                'Education App'
+                "Android",
+                "Java",
+                "Kotlin",
+                "Mobile UI/UX",
+                "Material Design",
+                "Self-Improvement",
+                "Learning App",
+                "REST API",
+                "Performance Optimization",
+                "Education App"
             ],
-            github: '#',
-            demo: 'https://play.google.com/store/apps/details?id=com.mahbub.skillmentor'
+            github: "#",
+            demo: "https://play.google.com/store/apps/details?id=com.mahbub.skillmentor"
         },
         {
-            title: 'Zakat Calculator – Java Application',
-            category: 'Android App',
-            description: 'A Java-based Zakat Calculator designed to help users calculate Zakat according to Islamic financial principles. Users can input assets like cash, savings, gold, silver, and investments, along with liabilities. The app computes Zakat eligibility (Nisab) and payable amount using precise calculation logic. Built entirely with Java, emphasizing correctness, maintainability, and user-friendly console interactions.',
-            image: '/projects/zakat-calculator.jpeg',
+            title: "Zakat Calculator – Java Application",
+            category: "Android App",
+            description: "A Java-based Zakat Calculator designed to help users calculate Zakat according to Islamic financial principles. Users can input assets like cash, savings, gold, silver, and investments, along with liabilities. The app computes Zakat eligibility (Nisab) and payable amount using precise calculation logic. Built entirely with Java, emphasizing correctness, maintainability, and user-friendly console interactions.",
+            image: "/projects/zakat-calculator.jpeg",
             tags: [
-                'Java',
-                'OOP',
-                'Islamic Finance',
-                'Zakat Calculator',
-                'Financial Calculations',
-                'Data Validation',
-                'Clean Code',
-                'Console Application',
-                'Problem Solving'
+                "Java",
+                "OOP",
+                "Islamic Finance",
+                "Zakat Calculator",
+                "Financial Calculations",
+                "Data Validation",
+                "Clean Code",
+                "Console Application",
+                "Problem Solving"
             ],
-            github: '#',
-            demo: ''
+            github: "#",
+            demo: ""
         },
         {
             title: "Mohammad Care Home – Therapy & Support Services Website",
@@ -1494,23 +1495,23 @@ function Projects() {
             demo: "https://example.com"
         },
         {
-            title: 'Tuxedo Musalla Prayer Times',
-            category: 'NextJs',
-            description: 'A responsive prayer times web application that displays accurate Salah (Islamic prayer) timings for Tuxedo Musalla based on the user’s location and daily solar calculations. Built with modern web technologies and optimized for performance, accessibility, and mobile-friendly design.',
-            image: '/projects/salah-time.png',
+            title: "Tuxedo Musalla Prayer Times",
+            category: "NextJs",
+            description: "A responsive prayer times web application that displays accurate Salah (Islamic prayer) timings for Tuxedo Musalla based on the user’s location and daily solar calculations. Built with modern web technologies and optimized for performance, accessibility, and mobile-friendly design.",
+            image: "/projects/salah-time.png",
             tags: [
-                'Next.js',
-                'React',
-                'Tailwind CSS',
-                'Responsive Design',
-                'API Integration',
-                'Location Services',
-                'Prayer Times',
-                'Utility App',
-                'SEO Optimization'
+                "Next.js",
+                "React",
+                "Tailwind CSS",
+                "Responsive Design",
+                "API Integration",
+                "Location Services",
+                "Prayer Times",
+                "Utility App",
+                "SEO Optimization"
             ],
-            github: 'https://github.com/yourusername/tuxedo-musalla-prayer-times',
-            demo: 'https://tuxedo-musalla-prayer-times.vercel.app/'
+            github: "https://github.com/yourusername/tuxedo-musalla-prayer-times",
+            demo: "https://tuxedo-musalla-prayer-times.vercel.app/"
         },
         {
             title: "Tourism Management Application",
@@ -1541,6 +1542,44 @@ function Projects() {
             ],
             github: "https://github.com",
             demo: "https://biznewsdive.com"
+        },
+        {
+            title: "Bangla Rannaghor – Bengali Recipe & Cooking Website",
+            category: "NextJs",
+            description: "A responsive Bengali cuisine recipe website showcasing a wide variety of traditional and modern recipes with rich visuals and easy-to-follow cooking instructions. Built with Next.js and modern frontend technologies to deliver a fast, SEO-optimized experience for food enthusiasts and home cooks.",
+            image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
+            tags: [
+                "Next.js",
+                "React",
+                "Tailwind CSS",
+                "Responsive Web Design",
+                "Recipe Website",
+                "SEO Optimization",
+                "UI/UX",
+                "Content-Rich Site"
+            ],
+            github: "#",
+            demo: "https://bangla-rannaghor.vercel.app/"
+        },
+        {
+            title: 'ATS Resume Builder – Next.js SaaS Application',
+            category: 'SaaS',
+            description: 'A full-stack ATS-optimized resume builder web app that enables users to create professional, recruiter-friendly resumes tailored for applicant tracking systems. Built with Next.js, featuring intuitive form workflows, dynamic resume previews, user authentication, and integrated payment processing for premium features. Designed for performance, usability, and conversion-focused UX.',
+            image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+            tags: [
+                'Next.js',
+                'React',
+                'Tailwind CSS',
+                'Responsive Web Design',
+                'SaaS',
+                'User Auth',
+                'Payment Integration',
+                'ATS Optimization',
+                'SEO Optimization',
+                'UI/UX Design'
+            ],
+            github: 'https://github.com/yourusername/ats-resume-builder',
+            demo: 'https://ats-resume-gamma.vercel.app/'
         }
     ];
     const filteredProjects = selectedCategory === "All" ? projects : projects.filter((project)=>project.category === selectedCategory);
@@ -1556,14 +1595,14 @@ function Projects() {
                     children: "Featured Projects"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects.tsx",
-                    lineNumber: 258,
+                    lineNumber: 301,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "w-20 h-1 bg-blue-600 mx-auto mb-12"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects.tsx",
-                    lineNumber: 261,
+                    lineNumber: 304,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1577,12 +1616,12 @@ function Projects() {
                             children: category
                         }, category, false, {
                             fileName: "[project]/app/components/Projects.tsx",
-                            lineNumber: 265,
+                            lineNumber: 308,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects.tsx",
-                    lineNumber: 263,
+                    lineNumber: 306,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1598,12 +1637,12 @@ function Projects() {
                                         className: "w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                                     }, void 0, false, {
                                         fileName: "[project]/app/components/Projects.tsx",
-                                        lineNumber: 289,
+                                        lineNumber: 332,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Projects.tsx",
-                                    lineNumber: 288,
+                                    lineNumber: 331,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1614,7 +1653,7 @@ function Projects() {
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects.tsx",
-                                            lineNumber: 296,
+                                            lineNumber: 339,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1622,7 +1661,7 @@ function Projects() {
                                             children: project.description
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects.tsx",
-                                            lineNumber: 299,
+                                            lineNumber: 342,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1632,12 +1671,12 @@ function Projects() {
                                                     children: tag
                                                 }, idx, false, {
                                                     fileName: "[project]/app/components/Projects.tsx",
-                                                    lineNumber: 304,
+                                                    lineNumber: 347,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Projects.tsx",
-                                            lineNumber: 302,
+                                            lineNumber: 345,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1653,20 +1692,20 @@ function Projects() {
                                                             className: "w-5 h-5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/Projects.tsx",
-                                                            lineNumber: 319,
+                                                            lineNumber: 362,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "Code"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/Projects.tsx",
-                                                            lineNumber: 320,
+                                                            lineNumber: 363,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/Projects.tsx",
-                                                    lineNumber: 313,
+                                                    lineNumber: 356,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1679,43 +1718,43 @@ function Projects() {
                                                             className: "w-5 h-5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/Projects.tsx",
-                                                            lineNumber: 328,
+                                                            lineNumber: 371,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             children: "Demo"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/components/Projects.tsx",
-                                                            lineNumber: 329,
+                                                            lineNumber: 372,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/components/Projects.tsx",
-                                                    lineNumber: 322,
+                                                    lineNumber: 365,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/components/Projects.tsx",
-                                            lineNumber: 312,
+                                            lineNumber: 355,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/Projects.tsx",
-                                    lineNumber: 295,
+                                    lineNumber: 338,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, index, true, {
                             fileName: "[project]/app/components/Projects.tsx",
-                            lineNumber: 284,
+                            lineNumber: 327,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects.tsx",
-                    lineNumber: 282,
+                    lineNumber: 325,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1726,23 +1765,23 @@ function Projects() {
                         children: showAll ? "Show Less" : "Show More"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Projects.tsx",
-                        lineNumber: 338,
+                        lineNumber: 381,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/Projects.tsx",
-                    lineNumber: 337,
+                    lineNumber: 380,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Projects.tsx",
-            lineNumber: 257,
+            lineNumber: 300,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Projects.tsx",
-        lineNumber: 256,
+        lineNumber: 299,
         columnNumber: 5
     }, this);
 }
