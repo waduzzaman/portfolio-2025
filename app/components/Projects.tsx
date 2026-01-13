@@ -13,7 +13,8 @@ export default function Projects() {
     "MERN App",
     "WordPress",
     "NextJs",
-    "Real Estate",
+    "Android App"
+   
   ];
 
   const projects = [
@@ -67,6 +68,108 @@ export default function Projects() {
       demo: "https://5wcommunications.com/",
     },
     {
+  title: 'AK Marketings – Business Expansion & Digital Services',
+  category: 'NextJs',
+  description: 'A responsive corporate website built for AK Marketings, a business expansion and digital services provider based in Canada. The platform showcases cross-border market entry support, marketing services (including digital marketing, SEO, brand development, and web design & development), client testimonials, and company information. Designed with modern UI/UX, SEO structure, and mobile-first responsiveness.',
+  image: '/projects/ak-marketings.png',
+  tags: [
+    'Next.js',
+    'React',
+    'Tailwind CSS',
+    'Responsive Web Design',
+    'SEO Optimization',
+    'Business Services Website',
+    'UI/UX',
+    'Content Strategy'
+  ],
+  github: '#', // replace with your actual repo
+  demo: 'https://www.akmarketings.com/',
+},
+
+{
+  title: 'My Canada Journey – Immigration & Settlement Guide',
+  category: 'NextJs',
+  description: 'A fully responsive and content-rich informational website built to provide newcomers and aspiring immigrants with practical guidance, tips, and insights about living in Canada. Features structured content around immigration pathways, settlement resources, cultural adaptation, community highlights, and support services. Designed with a modern UI, performance-focused architecture, and SEO-optimized structure.',
+  image: '/projects/canada-info.png',
+  tags: [
+    'Next.js',
+    'React',
+    'Tailwind CSS',
+    'Responsive Web Design',
+    'SEO Optimization',
+    'Content Strategy',
+    'UI/UX',
+    'Performance Optimization'
+  ],
+  github: '#', // replace with your actual repo link
+  demo: 'https://www.mycanadajourney.ca/',
+},
+
+{
+  title: 'Halal Checker – Android App',
+  category: 'Android App',
+  description:
+    'A native Android application that helps users instantly verify whether food products are Halal by scanning barcodes or searching product names. The app integrates the Open Food Facts public API to fetch ingredient data and applies Halal compliance logic to highlight permissible, doubtful, and non-Halal ingredients. Built with Java following clean architecture principles, focusing on performance, usability, and real-world consumer needs.',
+  image: '/projects/halal-checker.jpeg',
+  tags: [
+    'Android',
+    'Java',
+    'Open Food Facts API',
+    'REST API Integration',
+    'Barcode Scanning',
+    'JSON Parsing',
+    'Mobile UI/UX',
+    'Material Design',
+    'Clean Architecture'
+  ],
+  github: '#', // replace with actual repo
+  demo: '#', // optional
+},
+
+{
+  title: 'SkillMentor – Android Learning & Self-Improvement App',
+  category: 'Android App',
+  description: 'A native Android application designed to provide users with structured learning and self-improvement tools covering soft skills, professional development, mental health, daily routines, productivity techniques, and motivational content. Built with Java/Kotlin and optimized for intuitive mobile user experience and personal growth workflows.',
+  image: '/projects/code-mentor.jpeg',
+  tags: [
+    'Android',
+    'Java',
+    'Kotlin',
+    'Mobile UI/UX',
+    'Material Design',
+    'Self-Improvement',
+    'Learning App',
+    'REST API',
+    'Performance Optimization',
+    'Education App'
+  ],
+  github: '#', // replace with your actual repo
+  demo: 'https://play.google.com/store/apps/details?id=com.mahbub.skillmentor',
+},
+
+{
+  title: 'Zakat Calculator – Java Application',
+  category: 'Android App',
+  description: 'A Java-based Zakat Calculator designed to help users calculate Zakat according to Islamic financial principles. Users can input assets like cash, savings, gold, silver, and investments, along with liabilities. The app computes Zakat eligibility (Nisab) and payable amount using precise calculation logic. Built entirely with Java, emphasizing correctness, maintainability, and user-friendly console interactions.',
+  image: '/projects/zakat-calculator.jpeg',
+  tags: [
+    'Java',
+    'OOP',
+    'Islamic Finance',
+    'Zakat Calculator',
+    'Financial Calculations',
+    'Data Validation',
+    'Clean Code',
+    'Console Application',
+    'Problem Solving'
+  ],
+  github: '#', // replace with your actual repo
+  demo: '', // optional CLI demo link
+}, 
+
+
+
+    {
       title: "Mohammad Care Home – Therapy & Support Services Website",
       category: "WordPress",
       description:
@@ -92,18 +195,38 @@ export default function Projects() {
       description:
         "Library system automating borrowing processes with admin features for book inventory management (add, update, delete).",
       image:
-        "https://images.pexels.com/photos/8438922/pexels-photo-8438922.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "/projects/library.png",
       tags: ["React", "Node.js", "MongoDB", "Firebase", "Google Maps"],
       github: "https://github.com",
       demo: "https://example.com",
     },
+    {
+  title: 'Tuxedo Musalla Prayer Times',
+  category: 'NextJs',
+  description: 'A responsive prayer times web application that displays accurate Salah (Islamic prayer) timings for Tuxedo Musalla based on the user’s location and daily solar calculations. Built with modern web technologies and optimized for performance, accessibility, and mobile-friendly design.',
+  image: '/projects/salah-time.png',
+  tags: [
+    'Next.js',
+    'React',
+    'Tailwind CSS',
+    'Responsive Design',
+    'API Integration',
+    'Location Services',
+    'Prayer Times',
+    'Utility App',
+    'SEO Optimization'
+  ],
+  github: 'https://github.com/yourusername/tuxedo-musalla-prayer-times', // replace with actual repo
+  demo: 'https://tuxedo-musalla-prayer-times.vercel.app/',
+},
+
     {
       title: "Tourism Management Application",
       category: "MERN App",
       description:
         "Travel recommendation system with personalized suggestions and Google Maps API integration for real-time destination insights.",
       image:
-        "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "/projects/travel.png",
       tags: ["React", "Node.js", "Express", "MongoDB", "Google Maps"],
       github: "https://github.com",
       demo: "https://example.com",

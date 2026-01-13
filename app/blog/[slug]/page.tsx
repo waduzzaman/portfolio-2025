@@ -283,8 +283,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
             <div className="mt-12 pt-8 border-t">
               <Button asChild size="lg" className="bg-indigo-600 hover:bg-indigo-700">
-                <a href="https://yourportfolio.com/contact" target="_blank" rel="noopener noreferrer">
-                  Contact Us
+                <a href="/contact" target="_blank" rel="noopener noreferrer">
+                  Contact Me
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
