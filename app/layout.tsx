@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   creator: 'Md Mahbub E Waduzzaman',
   publisher: 'Md Mahbub E Waduzzaman',
 
-  metadataBase: new URL('https://waduzzaman.com'), // 🔁 replace with real domain
+  metadataBase: new URL('https://waduzzaman.com'), 
   alternates: {
     canonical: '/',
   },

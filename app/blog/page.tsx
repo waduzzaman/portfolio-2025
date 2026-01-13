@@ -1,184 +1,103 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Calendar, Clock, ArrowRight, Search, Mail } from "lucide-react";
 import Navigation from "../components/Navigation";
+import { blogData } from "@/lib/blog-data";
 
 export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const blogPosts = [
-    {
-      slug: "latest-ai-trends-2025",
-      title: "Latest AI Trends in 2025: What to Expect",
-      excerpt:
-        "Explore the newest developments in artificial intelligence, including generative AI, AI-powered automation, and the impact on various industries.",
-      category: "AI & Machine Learning",
-      date: "2025-12-15",
-      readTime: "6 min read",
-      image: "/ai.png",
-    },
-    {
-      slug: "cloud-computing-best-practices",
-      title: "Cloud Computing Best Practices for Modern Businesses",
-      excerpt:
-        "Learn about effective strategies for leveraging cloud platforms, optimizing performance, ensuring security, and reducing costs in your IT infrastructure.",
-      category: "Cloud & DevOps",
-      date: "2025-12-10",
-      readTime: "5 min read",
-      image: "/cloud.png",
-    },
-    {
-      slug: "cybersecurity-2025-guide",
-      title: "Cybersecurity in 2025: Protecting Your Digital Assets",
-      excerpt:
-        "Understand the emerging cybersecurity threats, essential protective measures, and the tools every organization should implement to stay secure.",
-      category: "Cybersecurity",
-      date: "2025-12-05",
-      readTime: "7 min read",
-      image: "/cybersecurity.png",
-    },
-    {
-      slug: "top-programming-languages-2025",
-      title: "Top Programming Languages to Learn in 2025",
-      excerpt:
-        "Discover the most in-demand programming languages, their applications in AI, web, and mobile development, and why they matter for your career.",
-      category: "Programming",
-      date: "2025-11-28",
-      readTime: "5 min read",
-      image: "/programming-language.png",
-    },
-    {
-      slug: "blockchain-and-web3",
-      title: "Blockchain and Web3: The Future of Decentralized Technology",
-      excerpt:
-        "Explore blockchain innovations, Web3 applications, NFTs, and how decentralization is transforming finance, gaming, and digital identity.",
-      category: "Blockchain & Web3",
-      date: "2025-11-20",
-      readTime: "6 min read",
-      image: "/blockchain.png",
-    },
-    {
-      slug: "emerging-iot-technologies",
-      title: "Emerging IoT Technologies: Smart Devices and Connected Worlds",
-      excerpt:
-        "Learn how Internet of Things devices are shaping smart homes, healthcare, and industry, along with the key challenges and opportunities for developers.",
-      category: "IoT & Smart Tech",
-      date: "2025-11-15",
-      readTime: "5 min read",
-      image: "/iot.png",
-    },
-  ];
+  const blogPosts = useMemo(() => {
+    return Object.entries(blogData).map(([slug, post]) => ({
+      slug,
+      ...post,
+    }));
+  }, []);
 
-  const categories = [
-    "All",
-    "AI & Machine Learning",
-    "Cloud & DevOps",
-    "Cybersecurity",
-    "Programming",
-    "Blockchain & Web3",
-    "IoT & Smart Tech",
-  ];
+  const categories = ["All", "AI & Machine Learning", "Cloud & DevOps", "Cybersecurity", "Programming", "Blockchain & Web3", "IoT & Smart Tech"];
 
-  const filteredPosts =
-    selectedCategory === "All"
-      ? blogPosts
-      : blogPosts.filter((post) => post.category === selectedCategory);
+  const filteredPosts = selectedCategory === "All" 
+    ? blogPosts 
+    : blogPosts.filter(post => post.category === selectedCategory);
 
   return (
-    <div className="flex flex-col bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
+    <div className="flex flex-col min-h-screen bg-white dark:bg-gray-950 transition-colors duration-500">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-20">
+      <section className="relative pt-40 pb-20 overflow-hidden bg-gray-50 dark:bg-gray-900/50">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Tech & Software Blog
+          <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tighter">
+            Insights & <span className="text-blue-600">Innovations</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
-            Stay updated with the latest trends, insights, and expert advice in
-            software development, AI, cybersecurity, and emerging technologies.
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            Exploring the frontier of software engineering, AI, and the future of the web.
           </p>
         </div>
       </section>
 
-      {/* Category Filter */}
-      <section className="py-10">
+      {/* Filter Bar */}
+      <section className="sticky top-20 z-40 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-y border-gray-100 dark:border-gray-800 py-6">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap gap-2 justify-center mb-8">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                  selectedCategory === category
-                    ? "bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg shadow-blue-500/50 scale-105"
-                    : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:shadow-md hover:scale-103 border border-gray-200 dark:border-gray-600"
+          <div className="flex flex-wrap gap-2 justify-center">
+            {categories.map(cat => (
+              <button 
+                key={cat} 
+                onClick={() => setSelectedCategory(cat)}
+                className={`px-5 py-2 rounded-full text-sm font-bold transition-all ${
+                  selectedCategory === cat ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30" : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200"
                 }`}
               >
-                {category}
+                {cat}
               </button>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Blog Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Blog Grid */}
+      <section className="py-20 container mx-auto px-4">
+        {filteredPosts.length > 0 ? (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {filteredPosts.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`}>
-                <Card className="h-full hover:shadow-xl transition-shadow overflow-hidden bg-white dark:bg-gray-800">
-                  <div className="aspect-video overflow-hidden">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
+                <Card className="h-full border-none bg-transparent shadow-none">
+                  <div className="aspect-[16/10] overflow-hidden rounded-3xl mb-6 shadow-lg border border-gray-100 dark:border-gray-800">
+                    <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   </div>
-                  <CardHeader>
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-xs font-semibold px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full">
-                        {post.category}
-                      </span>
-                    </div>
-                    <CardTitle className="text-xl hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-                      {post.title}
-                    </CardTitle>
-                    <CardDescription className="text-base mt-2 text-gray-700 dark:text-gray-300">
-                      {post.excerpt}
-                    </CardDescription>
+                  <CardHeader className="p-0">
+                    <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-3 block">{post.category}</span>
+                    <CardTitle className="text-2xl font-bold group-hover:text-blue-600 transition-colors leading-tight dark:text-white">{post.title}</CardTitle>
+                    <CardDescription className="text-base mt-4 line-clamp-3 text-gray-600 dark:text-gray-400 leading-relaxed">{post.excerpt}</CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
-                      <div className="flex items-center gap-2">
-                        <Calendar className="w-4 h-4" />
-                        <span>
-                          {new Date(post.date).toLocaleDateString("en-US", {
-                            month: "short",
-                            day: "numeric",
-                            year: "numeric",
-                          })}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Clock className="w-4 h-4" />
-                        <span>{post.readTime}</span>
-                      </div>
+                  <CardContent className="p-0 mt-6 flex justify-between items-center text-xs font-bold text-gray-400 uppercase tracking-widest">
+                    <div className="flex gap-4">
+                      <span className="flex items-center gap-1.5"><Calendar size={14}/> {post.date}</span>
+                      <span className="flex items-center gap-1.5"><Clock size={14}/> {post.readTime}</span>
                     </div>
-                    <div className="mt-4 text-indigo-600 dark:text-indigo-400 font-medium inline-flex items-center gap-1">
-                      Read More
-                      <ArrowRight className="w-4 h-4" />
-                    </div>
+                    <div className="text-blue-600 flex items-center gap-1">Read <ArrowRight size={14} /></div>
                   </CardContent>
                 </Card>
               </Link>
             ))}
+          </div>
+        ) : (
+          <div className="text-center py-20"><Search className="mx-auto text-gray-300 mb-4" size={48} /><h3 className="text-xl font-bold">No posts found</h3></div>
+        )}
+      </section>
+
+      {/* Newsletter Section */}
+      <section className="container mx-auto px-4 pb-20">
+        <div className="bg-blue-600 dark:bg-blue-700 rounded-[3rem] p-12 text-center text-white shadow-2xl shadow-blue-500/20">
+          <Mail className="mx-auto mb-6" size={40} />
+          <h2 className="text-3xl font-bold mb-4">Stay Ahead of the Curve</h2>
+          <p className="text-blue-100 mb-8 max-w-md mx-auto">Get monthly technical deep-dives and career insights delivered to your inbox.</p>
+          <div className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+            <input type="email" placeholder="email@example.com" className="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-blue-200 focus:outline-none focus:ring-2 focus:ring-white" />
+            <button className="px-8 py-4 bg-white text-blue-600 font-bold rounded-full hover:bg-blue-50 transition-all">Subscribe Now</button>
           </div>
         </div>
       </section>
