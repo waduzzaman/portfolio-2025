@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Web%20Dev%20All%20Projects/PORTFOLIOS/portfolio-2025/app/providers.tsx"],"sourcesContent":["'use client';\r\n\r\nimport * as React from 'react';\r\nimport { ThemeProvider as NextThemesProvider } from 'next-themes';\r\n\r\nexport function Providers({ children }: { children: React.ReactNode }) {\r\n  return (\r\n    <NextThemesProvider\r\n      attribute=\"class\"\r\n      defaultTheme=\"system\"\r\n      enableSystem\r\n      disableTransitionOnChange\r\n    >\r\n      {children}\r\n    </NextThemesProvider>\r\n  );\r\n}"],"names":[],"mappings":";;;;;AAGA;AAHA;;;AAKO,SAAS,UAAU,EAAE,QAAQ,EAAiC;IACnE,qBACE,6LAAC,oKAAkB;QACjB,WAAU;QACV,cAAa;QACb,YAAY;QACZ,yBAAyB;kBAExB;;;;;;AAGP;KAXgB"}}]
+}

@@ -15,6 +15,7 @@ export default function Projects() {
     "NextJs",
     "Android App",
     "SaaS",
+    "Utility App",
   ];
 
   const projects = [
@@ -262,28 +263,50 @@ export default function Projects() {
       github: "#", // replace with your actual repo
       demo: "https://bangla-rannaghor.vercel.app/",
     },
+  {
+  title: "PDF Merger & Splitter for Mobile",
+  category: "Utility App",
+  description:
+    "A fast and user-friendly web application that allows users to merge and split PDF files directly from their mobile or desktop browser. Built with Next.js and modern frontend tools, the app focuses on simplicity, performance, and privacy by processing files efficiently without unnecessary complexity.",
+  image:
+    "/projects/pdf-merge-split.png",
+  tags: [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "PDF Tools",
+    "File Management",
+    "Mobile-First Design",
+    "Client-Side Processing",
+    "UI/UX",
+  ],
+  github: "#", // replace with your actual repo
+  demo: "https://pdf-merger-splitter-for-mobile.vercel.app/",
+},
+
 
     {
-  title: 'ATS Resume Builder – Next.js SaaS Application',
-  category: 'SaaS',
-  description: 'A full-stack ATS-optimized resume builder web app that enables users to create professional, recruiter-friendly resumes tailored for applicant tracking systems. Built with Next.js, featuring intuitive form workflows, dynamic resume previews, user authentication, and integrated payment processing for premium features. Designed for performance, usability, and conversion-focused UX.',
-  image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-  tags: [
-    'Next.js',
-    'React',
-    'Tailwind CSS',
-    'Responsive Web Design',
-    'SaaS',
-    'User Auth',
-    'Payment Integration',
-    'ATS Optimization',
-    'SEO Optimization',
-    'UI/UX Design'
-  ],
-  github: 'https://github.com/yourusername/ats-resume-builder', // replace with your actual repository
-  demo: 'https://ats-resume-gamma.vercel.app/',
-}
-
+      title: "ATS Resume Builder – Next.js SaaS Application",
+      category: "SaaS",
+      description:
+        "A full-stack ATS-optimized resume builder web app that enables users to create professional, recruiter-friendly resumes tailored for applicant tracking systems. Built with Next.js, featuring intuitive form workflows, dynamic resume previews, user authentication, and integrated payment processing for premium features. Designed for performance, usability, and conversion-focused UX.",
+      image:
+        "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tags: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Responsive Web Design",
+        "SaaS",
+        "User Auth",
+        "Payment Integration",
+        "ATS Optimization",
+        "SEO Optimization",
+        "UI/UX Design",
+      ],
+      github: "https://github.com/yourusername/ats-resume-builder", // replace with your actual repository
+      demo: "https://ats-resume-gamma.vercel.app/",
+    },
   ];
 
   const filteredProjects =
